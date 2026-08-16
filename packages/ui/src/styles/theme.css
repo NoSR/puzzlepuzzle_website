@@ -1,0 +1,41 @@
+:root {
+  /* Colors - HSL based */
+  --color-primary: 220 80% 50%;
+  --color-primary-hover: 220 80% 40%;
+  --color-background: 0 0% 100%;
+  --color-foreground: 0 0% 10%;
+  --color-surface: 0 0% 96%;
+  --color-surface-hover: 0 0% 90%;
+  --color-border: 0 0% 85%;
+
+  /* Typography */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  /* Spacing */
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-6: 1.5rem;
+  --spacing-8: 2rem;
+  
+  /* Radii */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: 0 0% 5%;
+    --color-foreground: 0 0% 95%;
+    --color-surface: 0 0% 10%;
+    --color-surface-hover: 0 0% 15%;
+    --color-border: 0 0% 20%;
+  }
+}
