@@ -88,3 +88,10 @@ export const reviews = sqliteTable("review", {
   content: text("content"),
   createdAt: integer("createdAt", { mode: "timestamp_ms" }).$defaultFn(() => new Date()),
 });
+
+export const siteSettings = sqliteTable("siteSetting", {
+  key: text("key").primaryKey(), // e.g., "hero_background_image"
+  value: text("value").notNull(), // URL string
+  description: text("description"),
+  updatedAt: integer("updatedAt", { mode: "timestamp_ms" }).$defaultFn(() => new Date()),
+});

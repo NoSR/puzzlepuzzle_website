@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 200px); /* Adjusting for GNB and Footer roughly */
+  padding: var(--spacing-4);
+}
+
+.card {
+  background-color: hsl(var(--color-surface));
+  padding: var(--spacing-8);
+  border-radius: var(--radius-lg);
+  border: 1px solid hsl(var(--color-border));
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+}
+
+.googleBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-3);
+  background-color: hsl(var(--color-background));
+  color: hsl(var(--color-foreground));
+  border: 1px solid hsl(var(--color-border));
+  padding: var(--spacing-3) var(--spacing-4);
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+}
+
+.googleBtn:hover {
+  background-color: hsl(var(--color-surface-hover));
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  background-color: #DB4437; /* Google Red for placeholder */
+  border-radius: var(--radius-full);
+}

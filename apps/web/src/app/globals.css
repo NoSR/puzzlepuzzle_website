@@ -1,5 +1,21 @@
+@import '@puzzlepuzzle/ui/src/styles/theme.css';
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: var(--font-sans);
+  background-color: hsl(var(--color-background));
+  color: hsl(var(--color-foreground));
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+* {
+  box-sizing: inherit;
 }

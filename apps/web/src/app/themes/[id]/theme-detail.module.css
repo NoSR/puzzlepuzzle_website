@@ -1,0 +1,46 @@
+.container {
+  padding: var(--spacing-8);
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+}
+
+.hero {
+  width: 100%;
+  height: 300px;
+  background-color: hsl(var(--color-surface));
+  border: 1px solid hsl(var(--color-border));
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: hsl(var(--color-foreground));
+}
+
+.details {
+  background-color: hsl(var(--color-surface));
+  padding: var(--spacing-6);
+  border-radius: var(--radius-md);
+  border: 1px solid hsl(var(--color-border));
+}
+
+.reservationAction {
+  margin-top: var(--spacing-6);
+  padding: var(--spacing-6);
+  background-color: hsl(var(--color-primary) / 0.1);
+  border-radius: var(--radius-md);
+  text-align: center;
+  border: 1px solid hsl(var(--color-primary));
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: var(--spacing-4);
+  }
+  .hero {
+    height: 200px;
+  }
+}
