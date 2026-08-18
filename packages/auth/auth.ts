@@ -4,8 +4,6 @@ import GoogleProvider from "next-auth/providers/google";
 import * as schema from "@workspace/db/schema"; // Assuming workspace alias or adapt as needed
 
 // NextAuth configuration
-// Note: You must pass the D1 database instance to the adapter in the handler where it is available (e.g., in Next.js API route or middleware).
-// Here we define the NextAuth core configuration.
 export const authConfig = {
   providers: [
     GoogleProvider({
@@ -14,8 +12,15 @@ export const authConfig = {
     }),
   ],
   session: { strategy: "jwt" as const },
-  // adapter: DrizzleAdapter(db, { ...schema }) // To be instantiated with the bound db
+  callbacks: {
+    signIn({ user }) {
+      const whitelist = process.env.ADMIN_WHITELIST?.split(',') || ['admin@example.com'];
+      if (user.email && whitelist.includes(user.email)) {
+        return true;
+      }
+      return false; // Unauthorized
+    },
+  },
 };
 
-// If this environment allows instantiating auth directly:
-// export const { handlers, auth, signIn, signOut } = NextAuth(authConfig);
+export const { handlers, auth, signIn, signOut } = NextAuth(authConfig);
