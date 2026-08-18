@@ -95,3 +95,35 @@ export const siteSettings = sqliteTable("siteSetting", {
   description: text("description"),
   updatedAt: integer("updatedAt", { mode: "timestamp_ms" }).$defaultFn(() => new Date()),
 });
+
+export const playerSettings = sqliteTable("playerSetting", {
+  id: text("id")
+    .primaryKey()
+    .$defaultFn(() => crypto.randomUUID()),
+  requireSignature: integer("requireSignature", { mode: "boolean" }).notNull().default(true),
+  requiredFields: text("requiredFields", { mode: "json" }),
+  requireAllPlayers: integer("requireAllPlayers", { mode: "boolean" }).notNull().default(false),
+  showBriefing: integer("showBriefing", { mode: "boolean" }).notNull().default(false),
+  briefingMediaUrl: text("briefingMediaUrl"),
+  briefingHtml: text("briefingHtml"),
+});
+
+export const consents = sqliteTable("consent", {
+  id: text("id")
+    .primaryKey()
+    .$defaultFn(() => crypto.randomUUID()),
+  reservationId: text("reservationId").references(() => reservations.id),
+  themeId: text("themeId").references(() => themes.id),
+  signatureData: text("signatureData"),
+  consentedAt: integer("consentedAt", { mode: "timestamp_ms" }).$defaultFn(() => new Date()),
+});
+
+export const players = sqliteTable("player", {
+  id: text("id")
+    .primaryKey()
+    .$defaultFn(() => crypto.randomUUID()),
+  consentId: text("consentId").notNull().references(() => consents.id, { onDelete: "cascade" }),
+  name: text("name").notNull(),
+  phone: text("phone"),
+  email: text("email"),
+});
