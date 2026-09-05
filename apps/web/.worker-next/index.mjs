@@ -24947,7 +24947,7 @@ var require_load_manifest = __commonJS({
         
 
           if (path.endsWith(".next/prerender-manifest.json")) {
-            return {"version":4,"routes":{"/":{"experimentalBypassFor":[{"type":"header","key":"Next-Action"},{"type":"header","key":"content-type","value":"multipart/form-data;.*"}],"initialRevalidateSeconds":false,"srcRoute":"/","dataRoute":"/index.rsc"},"/themes":{"experimentalBypassFor":[{"type":"header","key":"Next-Action"},{"type":"header","key":"content-type","value":"multipart/form-data;.*"}],"initialRevalidateSeconds":false,"srcRoute":"/themes","dataRoute":"/themes.rsc"},"/api/settings":{"initialHeaders":{"content-type":"application/json","x-next-cache-tags":"_N_T_/layout,_N_T_/api/layout,_N_T_/api/settings/layout,_N_T_/api/settings/route,_N_T_/api/settings"},"experimentalBypassFor":[{"type":"header","key":"Next-Action"},{"type":"header","key":"content-type","value":"multipart/form-data;.*"}],"initialRevalidateSeconds":false,"srcRoute":"/api/settings","dataRoute":null},"/login":{"experimentalBypassFor":[{"type":"header","key":"Next-Action"},{"type":"header","key":"content-type","value":"multipart/form-data;.*"}],"initialRevalidateSeconds":false,"srcRoute":"/login","dataRoute":"/login.rsc"},"/api/themes":{"initialHeaders":{"content-type":"application/json","x-next-cache-tags":"_N_T_/layout,_N_T_/api/layout,_N_T_/api/themes/layout,_N_T_/api/themes/route,_N_T_/api/themes"},"experimentalBypassFor":[{"type":"header","key":"Next-Action"},{"type":"header","key":"content-type","value":"multipart/form-data;.*"}],"initialRevalidateSeconds":false,"srcRoute":"/api/themes","dataRoute":null}},"dynamicRoutes":{},"notFoundRoutes":[],"preview":{"previewModeId":"f4de8f64a7c7a4e25e335d5d28d4bbbd","previewModeSigningKey":"2f05bf11ba36d30d0998a91f35fb2a9c311519eeb71c0d2246f71bb1cfc47efe","previewModeEncryptionKey":"5b6edb0f3ab12960a3107a24315ff581e9eb43497449fc3aaf6b88979ec76a11"}};
+            return {"version":4,"routes":{"/api/themes":{"initialHeaders":{"content-type":"application/json","x-next-cache-tags":"_N_T_/layout,_N_T_/api/layout,_N_T_/api/themes/layout,_N_T_/api/themes/route,_N_T_/api/themes"},"experimentalBypassFor":[{"type":"header","key":"Next-Action"},{"type":"header","key":"content-type","value":"multipart/form-data;.*"}],"initialRevalidateSeconds":false,"srcRoute":"/api/themes","dataRoute":null},"/themes":{"experimentalBypassFor":[{"type":"header","key":"Next-Action"},{"type":"header","key":"content-type","value":"multipart/form-data;.*"}],"initialRevalidateSeconds":false,"srcRoute":"/themes","dataRoute":"/themes.rsc"},"/":{"experimentalBypassFor":[{"type":"header","key":"Next-Action"},{"type":"header","key":"content-type","value":"multipart/form-data;.*"}],"initialRevalidateSeconds":false,"srcRoute":"/","dataRoute":"/index.rsc"},"/api/settings":{"initialHeaders":{"content-type":"application/json","x-next-cache-tags":"_N_T_/layout,_N_T_/api/layout,_N_T_/api/settings/layout,_N_T_/api/settings/route,_N_T_/api/settings"},"experimentalBypassFor":[{"type":"header","key":"Next-Action"},{"type":"header","key":"content-type","value":"multipart/form-data;.*"}],"initialRevalidateSeconds":false,"srcRoute":"/api/settings","dataRoute":null},"/login":{"experimentalBypassFor":[{"type":"header","key":"Next-Action"},{"type":"header","key":"content-type","value":"multipart/form-data;.*"}],"initialRevalidateSeconds":false,"srcRoute":"/login","dataRoute":"/login.rsc"}},"dynamicRoutes":{},"notFoundRoutes":[],"preview":{"previewModeId":"1d6d74f36845ce99eabc388f322f449f","previewModeSigningKey":"03ad0c2eb19ec94052c72aaea2e1bce1286068c5834d5eb60cd290d3617c1661","previewModeEncryptionKey":"5eaf1e1d23a1edeaff192731c1865531c94ecc0e23c7865e387c191c95bb42b8"}};
           }
         
 
@@ -24959,24 +24959,24 @@ var require_load_manifest = __commonJS({
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/gX40k9B7Bhen_2rWQjYju/_buildManifest.js",
-    "static/gX40k9B7Bhen_2rWQjYju/_ssgManifest.js"
+    "static/XTglRUG0P173ESYzVzQGV/_buildManifest.js",
+    "static/XTglRUG0P173ESYzVzQGV/_ssgManifest.js"
   ],
   "rootMainFiles": [
-    "static/chunks/webpack-8e59c2844591c4b9.js",
-    "static/chunks/1dd3208c-82be33c4361f6614.js",
-    "static/chunks/528-66566e88b221e40c.js",
+    "static/chunks/webpack-32ae1d00c5918c71.js",
+    "static/chunks/1dd3208c-6a9c9e74f589d906.js",
+    "static/chunks/528-0e36a24e094951d1.js",
     "static/chunks/main-app-3bcd6311cde5d757.js"
   ],
   "pages": {
     "/_app": [
-      "static/chunks/webpack-8e59c2844591c4b9.js",
+      "static/chunks/webpack-32ae1d00c5918c71.js",
       "static/chunks/framework-3664cab31236a9fa.js",
       "static/chunks/main-1e635637e42b96b4.js",
       "static/chunks/pages/_app-10a93ab5b7c32eb3.js"
     ],
     "/_error": [
-      "static/chunks/webpack-8e59c2844591c4b9.js",
+      "static/chunks/webpack-32ae1d00c5918c71.js",
       "static/chunks/framework-3664cab31236a9fa.js",
       "static/chunks/main-1e635637e42b96b4.js",
       "static/chunks/pages/_error-2d792b2a41857be4.js"
@@ -24988,7 +24988,7 @@ var require_load_manifest = __commonJS({
         
 
           if (path.endsWith(".next/app-path-routes-manifest.json")) {
-            return {"/_not-found/page":"/_not-found","/api/themes/route":"/api/themes","/themes/[id]/page":"/themes/[id]","/page":"/","/login/page":"/login","/api/settings/route":"/api/settings","/themes/page":"/themes"};
+            return {"/_not-found/page":"/_not-found","/api/settings/route":"/api/settings","/api/themes/route":"/api/themes","/login/page":"/login","/page":"/","/themes/[id]/page":"/themes/[id]","/themes/page":"/themes"};
           }
         
 
@@ -24996,55 +24996,56 @@ var require_load_manifest = __commonJS({
             return {
   "pages": {
     "/_not-found/page": [
-      "static/chunks/webpack-8e59c2844591c4b9.js",
-      "static/chunks/1dd3208c-82be33c4361f6614.js",
-      "static/chunks/528-66566e88b221e40c.js",
+      "static/chunks/webpack-32ae1d00c5918c71.js",
+      "static/chunks/1dd3208c-6a9c9e74f589d906.js",
+      "static/chunks/528-0e36a24e094951d1.js",
       "static/chunks/main-app-3bcd6311cde5d757.js",
-      "static/chunks/app/_not-found/page-b883a4995de2e5ad.js"
+      "static/chunks/app/_not-found/page-6920725531cdc8de.js"
     ],
     "/layout": [
-      "static/chunks/webpack-8e59c2844591c4b9.js",
-      "static/chunks/1dd3208c-82be33c4361f6614.js",
-      "static/chunks/528-66566e88b221e40c.js",
+      "static/chunks/webpack-32ae1d00c5918c71.js",
+      "static/chunks/1dd3208c-6a9c9e74f589d906.js",
+      "static/chunks/528-0e36a24e094951d1.js",
       "static/chunks/main-app-3bcd6311cde5d757.js",
-      "static/css/097801bcc02cf0a8.css",
-      "static/chunks/340-611dcfd87f9795a9.js",
-      "static/chunks/app/layout-b81260458ae222be.js"
-    ],
-    "/themes/[id]/page": [
-      "static/chunks/webpack-8e59c2844591c4b9.js",
-      "static/chunks/1dd3208c-82be33c4361f6614.js",
-      "static/chunks/528-66566e88b221e40c.js",
-      "static/chunks/main-app-3bcd6311cde5d757.js",
-      "static/css/de5ec214e4a0acd7.css",
-      "static/chunks/app/themes/[id]/page-1901e83ac38f1cbe.js"
-    ],
-    "/page": [
-      "static/chunks/webpack-8e59c2844591c4b9.js",
-      "static/chunks/1dd3208c-82be33c4361f6614.js",
-      "static/chunks/528-66566e88b221e40c.js",
-      "static/chunks/main-app-3bcd6311cde5d757.js",
-      "static/css/9ab75f791052f8d8.css",
-      "static/css/de5ec214e4a0acd7.css",
-      "static/chunks/340-611dcfd87f9795a9.js",
-      "static/chunks/app/page-b263ffe8e5599e45.js"
+      "static/css/6829acef4c2b0f69.css",
+      "static/chunks/340-c41c02fbba14927b.js",
+      "static/chunks/app/layout-f245aab77481e294.js"
     ],
     "/login/page": [
-      "static/chunks/webpack-8e59c2844591c4b9.js",
-      "static/chunks/1dd3208c-82be33c4361f6614.js",
-      "static/chunks/528-66566e88b221e40c.js",
+      "static/chunks/webpack-32ae1d00c5918c71.js",
+      "static/chunks/1dd3208c-6a9c9e74f589d906.js",
+      "static/chunks/528-0e36a24e094951d1.js",
       "static/chunks/main-app-3bcd6311cde5d757.js",
-      "static/css/ca5f9e3c7c3acfb3.css",
-      "static/css/de5ec214e4a0acd7.css",
-      "static/chunks/app/login/page-d667e559822f8e5d.js"
+      "static/css/e2d4137bb4dcbc5d.css",
+      "static/chunks/app/login/page-c81bcd22779ce2e1.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-32ae1d00c5918c71.js",
+      "static/chunks/1dd3208c-6a9c9e74f589d906.js",
+      "static/chunks/528-0e36a24e094951d1.js",
+      "static/chunks/main-app-3bcd6311cde5d757.js",
+      "static/css/023aa4b21ac38b2a.css",
+      "static/css/e2d4137bb4dcbc5d.css",
+      "static/chunks/340-c41c02fbba14927b.js",
+      "static/chunks/app/page-7c4cb92da096032a.js"
+    ],
+    "/themes/[id]/page": [
+      "static/chunks/webpack-32ae1d00c5918c71.js",
+      "static/chunks/1dd3208c-6a9c9e74f589d906.js",
+      "static/chunks/528-0e36a24e094951d1.js",
+      "static/chunks/main-app-3bcd6311cde5d757.js",
+      "static/css/402c00c533fea8a6.css",
+      "static/css/e2d4137bb4dcbc5d.css",
+      "static/chunks/340-c41c02fbba14927b.js",
+      "static/chunks/app/themes/[id]/page-c26aa7d5c4027324.js"
     ],
     "/themes/page": [
-      "static/chunks/webpack-8e59c2844591c4b9.js",
-      "static/chunks/1dd3208c-82be33c4361f6614.js",
-      "static/chunks/528-66566e88b221e40c.js",
+      "static/chunks/webpack-32ae1d00c5918c71.js",
+      "static/chunks/1dd3208c-6a9c9e74f589d906.js",
+      "static/chunks/528-0e36a24e094951d1.js",
       "static/chunks/main-app-3bcd6311cde5d757.js",
       "static/css/3b84ec841175d664.css",
-      "static/chunks/340-611dcfd87f9795a9.js",
+      "static/chunks/340-c41c02fbba14927b.js",
       "static/chunks/app/themes/page-2ac8bbcf729c011d.js"
     ]
   }
@@ -25053,7 +25054,7 @@ var require_load_manifest = __commonJS({
         
 
           if (path.endsWith(".next/server/server-reference-manifest.json")) {
-            return {"node":{},"edge":{},"encryptionKey":"h9+U+Cgl8sZXdL0jyg7KUCaewq+rHL0i76pOE8IQNZw="};
+            return {"node":{},"edge":{},"encryptionKey":"affLc02dGPf0I7RHsn1FUQsBqCPywD+HnCn/mEKD+Ps="};
           }
         
 
@@ -25085,11 +25086,11 @@ var require_load_manifest = __commonJS({
           if (path.endsWith(".next/server/app-paths-manifest.json")) {
             return {
   "/_not-found/page": "app/_not-found/page.js",
-  "/api/themes/route": "app/api/themes/route.js",
-  "/themes/[id]/page": "app/themes/[id]/page.js",
-  "/page": "app/page.js",
-  "/login/page": "app/login/page.js",
   "/api/settings/route": "app/api/settings/route.js",
+  "/api/themes/route": "app/api/themes/route.js",
+  "/login/page": "app/login/page.js",
+  "/page": "app/page.js",
+  "/themes/[id]/page": "app/themes/[id]/page.js",
   "/themes/page": "app/themes/page.js"
 };
           }
@@ -25285,7 +25286,7 @@ var require_require = __commonJS({
       const pagePath = getPagePath(page, distDir, void 0, isAppPath);
     
           if (pagePath.endsWith(".next/server/pages/404.html")) {
-            return "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"stylesheet\" href=\"/_next/static/css/097801bcc02cf0a8.css\" data-precedence=\"next\"/><link rel=\"preload\" as=\"script\" fetchPriority=\"low\" href=\"/_next/static/chunks/webpack-8e59c2844591c4b9.js\"/><script src=\"/_next/static/chunks/1dd3208c-82be33c4361f6614.js\" async=\"\"></script><script src=\"/_next/static/chunks/528-66566e88b221e40c.js\" async=\"\"></script><script src=\"/_next/static/chunks/main-app-3bcd6311cde5d757.js\" async=\"\"></script><script src=\"/_next/static/chunks/340-611dcfd87f9795a9.js\" async=\"\"></script><script src=\"/_next/static/chunks/app/page-b263ffe8e5599e45.js\" async=\"\"></script><meta name=\"robots\" content=\"noindex\"/><title>404: This page could not be found.</title><title>PuzzlePuzzle</title><script src=\"/_next/static/chunks/polyfills-42372ed130431b0a.js\" noModule=\"\"></script></head><body><nav class=\"GNB_nav__b_wE_\"><a class=\"GNB_logo__cf6fw\" href=\"/\">Puzzle<span>Puzzle</span></a><div class=\"GNB_links__zZRNS\"><a class=\"GNB_link__2onZk\" href=\"/themes\">테마 목록</a><a class=\"GNB_link__2onZk\" href=\"/login\">로그인</a></div></nav><main><div style=\"font-family:system-ui,&quot;Segoe UI&quot;,Roboto,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;;height:100vh;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center\"><div><style>body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}</style><h1 class=\"next-error-h1\" style=\"display:inline-block;margin:0 20px 0 0;padding:0 23px 0 0;font-size:24px;font-weight:500;vertical-align:top;line-height:49px\">404</h1><div style=\"display:inline-block\"><h2 style=\"font-size:14px;font-weight:400;line-height:49px;margin:0\">This page could not be found.</h2></div></div></div></main><footer class=\"Footer_footer__UaG1g\"><p class=\"Footer_text__D3h25\">© <!-- -->2026<!-- --> PuzzlePuzzle. 모든 권리 보유.</p></footer><script src=\"/_next/static/chunks/webpack-8e59c2844591c4b9.js\" async=\"\"></script><script>(self.__next_f=self.__next_f||[]).push([0]);self.__next_f.push([2,null])</script><script>self.__next_f.push([1,\"1:HL[\\\"/_next/static/css/097801bcc02cf0a8.css\\\",\\\"style\\\"]\\n\"])</script><script>self.__next_f.push([1,\"2:I[1815,[],\\\"\\\"]\\n4:I[5092,[],\\\"\\\"]\\n5:I[2023,[],\\\"\\\"]\\n6:I[6340,[\\\"340\\\",\\\"static/chunks/340-611dcfd87f9795a9.js\\\",\\\"931\\\",\\\"static/chunks/app/page-b263ffe8e5599e45.js\\\"],\\\"\\\"]\\nc:I[1584,[],\\\"\\\"]\\n7:{\\\"fontFamily\\\":\\\"system-ui,\\\\\\\"Segoe UI\\\\\\\",Roboto,Helvetica,Arial,sans-serif,\\\\\\\"Apple Color Emoji\\\\\\\",\\\\\\\"Segoe UI Emoji\\\\\\\"\\\",\\\"height\\\":\\\"100vh\\\",\\\"textAlign\\\":\\\"center\\\",\\\"display\\\":\\\"flex\\\",\\\"flexDirection\\\":\\\"column\\\",\\\"alignItems\\\":\\\"center\\\",\\\"justifyContent\\\":\\\"center\\\"}\\n8:{\\\"display\\\":\\\"inline-block\\\",\\\"margin\\\":\\\"0 20px 0 0\\\",\\\"padding\\\":\\\"0 23px 0 0\\\",\\\"fontSize\\\":24,\\\"fontWeight\\\":500,\\\"verticalAlign\\\":\\\"top\\\",\\\"lineHeight\\\":\\\"49px\\\"}\\n9:{\\\"display\\\":\\\"inline-block\\\"}\\na:{\\\"fontSize\\\":14,\\\"fontWeight\\\":400,\\\"lineHeight\\\":\\\"49px\\\",\\\"margin\\\":0}\\nd:[]\\n\"])</script><script>self.__next_f.push([1,\"0:[\\\"$\\\",\\\"$L2\\\",null,{\\\"buildId\\\":\\\"gX40k9B7Bhen_2rWQjYju\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"_not-found\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"/_not-found\\\",{\\\"children\\\":[\\\"__PAGE__\\\",{}]}]},\\\"$undefined\\\",\\\"$undefined\\\",true],\\\"initialSeedData\\\":[\\\"\\\",{\\\"children\\\":[\\\"/_not-found\\\",{\\\"children\\\":[\\\"__PAGE__\\\",{},[[\\\"$L3\\\",[[\\\"$\\\",\\\"title\\\",null,{\\\"children\\\":\\\"404: This page could not be found.\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"style\\\":{\\\"fontFamily\\\":\\\"system-ui,\\\\\\\"Segoe UI\\\\\\\",Roboto,Helvetica,Arial,sans-serif,\\\\\\\"Apple Color Emoji\\\\\\\",\\\\\\\"Segoe UI Emoji\\\\\\\"\\\",\\\"height\\\":\\\"100vh\\\",\\\"textAlign\\\":\\\"center\\\",\\\"display\\\":\\\"flex\\\",\\\"flexDirection\\\":\\\"column\\\",\\\"alignItems\\\":\\\"center\\\",\\\"justifyContent\\\":\\\"center\\\"},\\\"children\\\":[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"style\\\",null,{\\\"dangerouslySetInnerHTML\\\":{\\\"__html\\\":\\\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\\\"}}],[\\\"$\\\",\\\"h1\\\",null,{\\\"className\\\":\\\"next-error-h1\\\",\\\"style\\\":{\\\"display\\\":\\\"inline-block\\\",\\\"margin\\\":\\\"0 20px 0 0\\\",\\\"padding\\\":\\\"0 23px 0 0\\\",\\\"fontSize\\\":24,\\\"fontWeight\\\":500,\\\"verticalAlign\\\":\\\"top\\\",\\\"lineHeight\\\":\\\"49px\\\"},\\\"children\\\":\\\"404\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"style\\\":{\\\"display\\\":\\\"inline-block\\\"},\\\"children\\\":[\\\"$\\\",\\\"h2\\\",null,{\\\"style\\\":{\\\"fontSize\\\":14,\\\"fontWeight\\\":400,\\\"lineHeight\\\":\\\"49px\\\",\\\"margin\\\":0},\\\"children\\\":\\\"This page could not be found.\\\"}]}]]}]}]],null],null],null]},[null,[\\\"$\\\",\\\"$L4\\\",null,{\\\"parallelRouterKey\\\":\\\"children\\\",\\\"segmentPath\\\":[\\\"children\\\",\\\"/_not-found\\\",\\\"children\\\"],\\\"error\\\":\\\"$undefined\\\",\\\"errorStyles\\\":\\\"$undefined\\\",\\\"errorScripts\\\":\\\"$undefined\\\",\\\"template\\\":[\\\"$\\\",\\\"$L5\\\",null,{}],\\\"templateStyles\\\":\\\"$undefined\\\",\\\"templateScripts\\\":\\\"$undefined\\\",\\\"notFound\\\":\\\"$undefined\\\",\\\"notFoundStyles\\\":\\\"$undefined\\\"}]],null]},[[[[\\\"$\\\",\\\"link\\\",\\\"0\\\",{\\\"rel\\\":\\\"stylesheet\\\",\\\"href\\\":\\\"/_next/static/css/097801bcc02cf0a8.css\\\",\\\"precedence\\\":\\\"next\\\",\\\"crossOrigin\\\":\\\"$undefined\\\"}]],[\\\"$\\\",\\\"html\\\",null,{\\\"lang\\\":\\\"en\\\",\\\"children\\\":[\\\"$\\\",\\\"body\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"nav\\\",null,{\\\"className\\\":\\\"GNB_nav__b_wE_\\\",\\\"children\\\":[[\\\"$\\\",\\\"$L6\\\",null,{\\\"href\\\":\\\"/\\\",\\\"className\\\":\\\"GNB_logo__cf6fw\\\",\\\"children\\\":[\\\"Puzzle\\\",[\\\"$\\\",\\\"span\\\",null,{\\\"children\\\":\\\"Puzzle\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"GNB_links__zZRNS\\\",\\\"children\\\":[[\\\"$\\\",\\\"$L6\\\",null,{\\\"href\\\":\\\"/themes\\\",\\\"className\\\":\\\"GNB_link__2onZk\\\",\\\"children\\\":\\\"테마 목록\\\"}],[\\\"$\\\",\\\"$L6\\\",null,{\\\"href\\\":\\\"/login\\\",\\\"className\\\":\\\"GNB_link__2onZk\\\",\\\"children\\\":\\\"로그인\\\"}]]}]]}],[\\\"$\\\",\\\"main\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"$L4\\\",null,{\\\"parallelRouterKey\\\":\\\"children\\\",\\\"segmentPath\\\":[\\\"children\\\"],\\\"error\\\":\\\"$undefined\\\",\\\"errorStyles\\\":\\\"$undefined\\\",\\\"errorScripts\\\":\\\"$undefined\\\",\\\"template\\\":[\\\"$\\\",\\\"$L5\\\",null,{}],\\\"templateStyles\\\":\\\"$undefined\\\",\\\"templateScripts\\\":\\\"$undefined\\\",\\\"notFound\\\":[[\\\"$\\\",\\\"title\\\",null,{\\\"children\\\":\\\"404: This page could not be found.\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"style\\\":\\\"$7\\\",\\\"children\\\":[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"style\\\",null,{\\\"dangerouslySetInnerHTML\\\":{\\\"__html\\\":\\\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\\\"}}],[\\\"$\\\",\\\"h1\\\",null,{\\\"className\\\":\\\"next-error-h1\\\",\\\"style\\\":\\\"$8\\\",\\\"children\\\":\\\"404\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"style\\\":\\\"$9\\\",\\\"children\\\":[\\\"$\\\",\\\"h2\\\",null,{\\\"style\\\":\\\"$a\\\",\\\"children\\\":\\\"This page could not be found.\\\"}]}]]}]}]],\\\"notFoundStyles\\\":[]}]}],[\\\"$\\\",\\\"footer\\\",null,{\\\"className\\\":\\\"Footer_footer__UaG1g\\\",\\\"children\\\":[\\\"$\\\",\\\"p\\\",null,{\\\"className\\\":\\\"Footer_text__D3h25\\\",\\\"children\\\":[\\\"© \\\",2026,\\\" PuzzlePuzzle. 모든 권리 보유.\\\"]}]}]]}]}]],null],null],\\\"couldBeIntercepted\\\":false,\\\"initialHead\\\":[[\\\"$\\\",\\\"meta\\\",null,{\\\"name\\\":\\\"robots\\\",\\\"content\\\":\\\"noindex\\\"}],\\\"$Lb\\\"],\\\"globalErrorComponent\\\":\\\"$c\\\",\\\"missingSlots\\\":\\\"$Wd\\\"}]\\n\"])</script><script>self.__next_f.push([1,\"b:[[\\\"$\\\",\\\"meta\\\",\\\"0\\\",{\\\"name\\\":\\\"viewport\\\",\\\"content\\\":\\\"width=device-width, initial-scale=1\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"1\\\",{\\\"charSet\\\":\\\"utf-8\\\"}],[\\\"$\\\",\\\"title\\\",\\\"2\\\",{\\\"children\\\":\\\"PuzzlePuzzle\\\"}]]\\n3:null\\n\"])</script></body></html>";
+            return "<!DOCTYPE html><html lang=\"ko\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"stylesheet\" href=\"/_next/static/css/6829acef4c2b0f69.css\" data-precedence=\"next\"/><link rel=\"preload\" as=\"script\" fetchPriority=\"low\" href=\"/_next/static/chunks/webpack-32ae1d00c5918c71.js\"/><script src=\"/_next/static/chunks/1dd3208c-6a9c9e74f589d906.js\" async=\"\"></script><script src=\"/_next/static/chunks/528-0e36a24e094951d1.js\" async=\"\"></script><script src=\"/_next/static/chunks/main-app-3bcd6311cde5d757.js\" async=\"\"></script><script src=\"/_next/static/chunks/340-c41c02fbba14927b.js\" async=\"\"></script><script src=\"/_next/static/chunks/app/layout-f245aab77481e294.js\" async=\"\"></script><meta name=\"robots\" content=\"noindex\"/><title>404: This page could not be found.</title><title>퍼즐퍼즐 | 방탈출 카페</title><meta name=\"description\" content=\"최고의 방탈출 경험 - 퍼즐퍼즐\"/><script src=\"/_next/static/chunks/polyfills-42372ed130431b0a.js\" noModule=\"\"></script></head><body><nav class=\"GNB_nav__b_wE_\"><a class=\"GNB_logo__cf6fw\" href=\"/\">Puzzle<span>Puzzle</span></a><div class=\"GNB_links__zZRNS\"><a class=\"GNB_link__2onZk\" href=\"/themes\">테마 목록</a><a class=\"GNB_link__2onZk\" href=\"/login\">로그인</a></div></nav><main><div style=\"font-family:system-ui,&quot;Segoe UI&quot;,Roboto,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;;height:100vh;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center\"><div><style>body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}</style><h1 class=\"next-error-h1\" style=\"display:inline-block;margin:0 20px 0 0;padding:0 23px 0 0;font-size:24px;font-weight:500;vertical-align:top;line-height:49px\">404</h1><div style=\"display:inline-block\"><h2 style=\"font-size:14px;font-weight:400;line-height:49px;margin:0\">This page could not be found.</h2></div></div></div></main><footer class=\"Footer_footer__UaG1g\"><div class=\"Footer_inner__ACAek\"><div class=\"Footer_top__b4wwC\"><div><a class=\"Footer_logo__NsUJK\" href=\"/\">Puzzle<span>Puzzle</span></a><p class=\"Footer_brandDesc__oUQ_R\">몰입형 방탈출 경험의 새로운 기준.<br/>당신의 한계를 시험하세요.</p></div><div class=\"Footer_links__oDyjI\"><div class=\"Footer_linkGroup__3skIZ\"><h4 class=\"Footer_linkGroupTitle__dZ9OZ\">테마</h4><a class=\"Footer_link__EWWOW\" href=\"/themes/1\">미스터리 맨션</a><a class=\"Footer_link__EWWOW\" href=\"/themes/2\">우주 탈출</a><a class=\"Footer_link__EWWOW\" href=\"/themes/3\">은행 강도</a></div><div class=\"Footer_linkGroup__3skIZ\"><h4 class=\"Footer_linkGroupTitle__dZ9OZ\">고객 지원</h4><a class=\"Footer_link__EWWOW\" href=\"/\">자주 묻는 질문</a><a class=\"Footer_link__EWWOW\" href=\"/\">예약 안내</a><a class=\"Footer_link__EWWOW\" href=\"/\">단체 예약</a></div></div></div><div class=\"Footer_bottom__O5rKs\"><p class=\"Footer_copy__IbaoR\">© 2025 PuzzlePuzzle. All rights reserved.</p></div></div></footer><script src=\"/_next/static/chunks/webpack-32ae1d00c5918c71.js\" async=\"\"></script><script>(self.__next_f=self.__next_f||[]).push([0]);self.__next_f.push([2,null])</script><script>self.__next_f.push([1,\"1:HL[\\\"/_next/static/css/6829acef4c2b0f69.css\\\",\\\"style\\\"]\\n\"])</script><script>self.__next_f.push([1,\"2:I[1815,[],\\\"\\\"]\\n4:I[5092,[],\\\"\\\"]\\n5:I[2023,[],\\\"\\\"]\\n6:I[6340,[\\\"340\\\",\\\"static/chunks/340-c41c02fbba14927b.js\\\",\\\"185\\\",\\\"static/chunks/app/layout-f245aab77481e294.js\\\"],\\\"\\\"]\\nc:I[1584,[],\\\"\\\"]\\n7:{\\\"fontFamily\\\":\\\"system-ui,\\\\\\\"Segoe UI\\\\\\\",Roboto,Helvetica,Arial,sans-serif,\\\\\\\"Apple Color Emoji\\\\\\\",\\\\\\\"Segoe UI Emoji\\\\\\\"\\\",\\\"height\\\":\\\"100vh\\\",\\\"textAlign\\\":\\\"center\\\",\\\"display\\\":\\\"flex\\\",\\\"flexDirection\\\":\\\"column\\\",\\\"alignItems\\\":\\\"center\\\",\\\"justifyContent\\\":\\\"center\\\"}\\n8:{\\\"display\\\":\\\"inline-block\\\",\\\"margin\\\":\\\"0 20px 0 0\\\",\\\"padding\\\":\\\"0 23px 0 0\\\",\\\"fontSize\\\":24,\\\"fontWeight\\\":500,\\\"verticalAlign\\\":\\\"top\\\",\\\"lineHeight\\\":\\\"49px\\\"}\\n9:{\\\"display\\\":\\\"inline-block\\\"}\\na:{\\\"fontSize\\\":14,\\\"fontWeight\\\":400,\\\"lineHeight\\\":\\\"49px\\\",\\\"margin\\\":0}\\nd:[]\\n\"])</script><script>self.__next_f.push([1,\"0:[\\\"$\\\",\\\"$L2\\\",null,{\\\"buildId\\\":\\\"XTglRUG0P173ESYzVzQGV\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"_not-found\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"/_not-found\\\",{\\\"children\\\":[\\\"__PAGE__\\\",{}]}]},\\\"$undefined\\\",\\\"$undefined\\\",true],\\\"initialSeedData\\\":[\\\"\\\",{\\\"children\\\":[\\\"/_not-found\\\",{\\\"children\\\":[\\\"__PAGE__\\\",{},[[\\\"$L3\\\",[[\\\"$\\\",\\\"title\\\",null,{\\\"children\\\":\\\"404: This page could not be found.\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"style\\\":{\\\"fontFamily\\\":\\\"system-ui,\\\\\\\"Segoe UI\\\\\\\",Roboto,Helvetica,Arial,sans-serif,\\\\\\\"Apple Color Emoji\\\\\\\",\\\\\\\"Segoe UI Emoji\\\\\\\"\\\",\\\"height\\\":\\\"100vh\\\",\\\"textAlign\\\":\\\"center\\\",\\\"display\\\":\\\"flex\\\",\\\"flexDirection\\\":\\\"column\\\",\\\"alignItems\\\":\\\"center\\\",\\\"justifyContent\\\":\\\"center\\\"},\\\"children\\\":[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"style\\\",null,{\\\"dangerouslySetInnerHTML\\\":{\\\"__html\\\":\\\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\\\"}}],[\\\"$\\\",\\\"h1\\\",null,{\\\"className\\\":\\\"next-error-h1\\\",\\\"style\\\":{\\\"display\\\":\\\"inline-block\\\",\\\"margin\\\":\\\"0 20px 0 0\\\",\\\"padding\\\":\\\"0 23px 0 0\\\",\\\"fontSize\\\":24,\\\"fontWeight\\\":500,\\\"verticalAlign\\\":\\\"top\\\",\\\"lineHeight\\\":\\\"49px\\\"},\\\"children\\\":\\\"404\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"style\\\":{\\\"display\\\":\\\"inline-block\\\"},\\\"children\\\":[\\\"$\\\",\\\"h2\\\",null,{\\\"style\\\":{\\\"fontSize\\\":14,\\\"fontWeight\\\":400,\\\"lineHeight\\\":\\\"49px\\\",\\\"margin\\\":0},\\\"children\\\":\\\"This page could not be found.\\\"}]}]]}]}]],null],null],null]},[null,[\\\"$\\\",\\\"$L4\\\",null,{\\\"parallelRouterKey\\\":\\\"children\\\",\\\"segmentPath\\\":[\\\"children\\\",\\\"/_not-found\\\",\\\"children\\\"],\\\"error\\\":\\\"$undefined\\\",\\\"errorStyles\\\":\\\"$undefined\\\",\\\"errorScripts\\\":\\\"$undefined\\\",\\\"template\\\":[\\\"$\\\",\\\"$L5\\\",null,{}],\\\"templateStyles\\\":\\\"$undefined\\\",\\\"templateScripts\\\":\\\"$undefined\\\",\\\"notFound\\\":\\\"$undefined\\\",\\\"notFoundStyles\\\":\\\"$undefined\\\"}]],null]},[[[[\\\"$\\\",\\\"link\\\",\\\"0\\\",{\\\"rel\\\":\\\"stylesheet\\\",\\\"href\\\":\\\"/_next/static/css/6829acef4c2b0f69.css\\\",\\\"precedence\\\":\\\"next\\\",\\\"crossOrigin\\\":\\\"$undefined\\\"}]],[\\\"$\\\",\\\"html\\\",null,{\\\"lang\\\":\\\"ko\\\",\\\"children\\\":[\\\"$\\\",\\\"body\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"nav\\\",null,{\\\"className\\\":\\\"GNB_nav__b_wE_\\\",\\\"children\\\":[[\\\"$\\\",\\\"$L6\\\",null,{\\\"href\\\":\\\"/\\\",\\\"className\\\":\\\"GNB_logo__cf6fw\\\",\\\"children\\\":[\\\"Puzzle\\\",[\\\"$\\\",\\\"span\\\",null,{\\\"children\\\":\\\"Puzzle\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"GNB_links__zZRNS\\\",\\\"children\\\":[[\\\"$\\\",\\\"$L6\\\",null,{\\\"href\\\":\\\"/themes\\\",\\\"className\\\":\\\"GNB_link__2onZk\\\",\\\"children\\\":\\\"테마 목록\\\"}],[\\\"$\\\",\\\"$L6\\\",null,{\\\"href\\\":\\\"/login\\\",\\\"className\\\":\\\"GNB_link__2onZk\\\",\\\"children\\\":\\\"로그인\\\"}]]}]]}],[\\\"$\\\",\\\"main\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"$L4\\\",null,{\\\"parallelRouterKey\\\":\\\"children\\\",\\\"segmentPath\\\":[\\\"children\\\"],\\\"error\\\":\\\"$undefined\\\",\\\"errorStyles\\\":\\\"$undefined\\\",\\\"errorScripts\\\":\\\"$undefined\\\",\\\"template\\\":[\\\"$\\\",\\\"$L5\\\",null,{}],\\\"templateStyles\\\":\\\"$undefined\\\",\\\"templateScripts\\\":\\\"$undefined\\\",\\\"notFound\\\":[[\\\"$\\\",\\\"title\\\",null,{\\\"children\\\":\\\"404: This page could not be found.\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"style\\\":\\\"$7\\\",\\\"children\\\":[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"style\\\",null,{\\\"dangerouslySetInnerHTML\\\":{\\\"__html\\\":\\\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\\\"}}],[\\\"$\\\",\\\"h1\\\",null,{\\\"className\\\":\\\"next-error-h1\\\",\\\"style\\\":\\\"$8\\\",\\\"children\\\":\\\"404\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"style\\\":\\\"$9\\\",\\\"children\\\":[\\\"$\\\",\\\"h2\\\",null,{\\\"style\\\":\\\"$a\\\",\\\"children\\\":\\\"This page could not be found.\\\"}]}]]}]}]],\\\"notFoundStyles\\\":[]}]}],[\\\"$\\\",\\\"footer\\\",null,{\\\"className\\\":\\\"Footer_footer__UaG1g\\\",\\\"children\\\":[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"Footer_inner__ACAek\\\",\\\"children\\\":[[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"Footer_top__b4wwC\\\",\\\"children\\\":[[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"$undefined\\\",\\\"children\\\":[[\\\"$\\\",\\\"$L6\\\",null,{\\\"href\\\":\\\"/\\\",\\\"className\\\":\\\"Footer_logo__NsUJK\\\",\\\"children\\\":[\\\"Puzzle\\\",[\\\"$\\\",\\\"span\\\",null,{\\\"children\\\":\\\"Puzzle\\\"}]]}],[\\\"$\\\",\\\"p\\\",null,{\\\"className\\\":\\\"Footer_brandDesc__oUQ_R\\\",\\\"children\\\":[\\\"몰입형 방탈출 경험의 새로운 기준.\\\",[\\\"$\\\",\\\"br\\\",null,{}],\\\"당신의 한계를 시험하세요.\\\"]}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"Footer_links__oDyjI\\\",\\\"children\\\":[[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"Footer_linkGroup__3skIZ\\\",\\\"children\\\":[[\\\"$\\\",\\\"h4\\\",null,{\\\"className\\\":\\\"Footer_linkGroupTitle__dZ9OZ\\\",\\\"children\\\":\\\"테마\\\"}],[\\\"$\\\",\\\"$L6\\\",null,{\\\"href\\\":\\\"/themes/1\\\",\\\"className\\\":\\\"Footer_link__EWWOW\\\",\\\"children\\\":\\\"미스터리 맨션\\\"}],[\\\"$\\\",\\\"$L6\\\",null,{\\\"href\\\":\\\"/themes/2\\\",\\\"className\\\":\\\"Footer_link__EWWOW\\\",\\\"children\\\":\\\"우주 탈출\\\"}],[\\\"$\\\",\\\"$L6\\\",null,{\\\"href\\\":\\\"/themes/3\\\",\\\"className\\\":\\\"Footer_link__EWWOW\\\",\\\"children\\\":\\\"은행 강도\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"Footer_linkGroup__3skIZ\\\",\\\"children\\\":[[\\\"$\\\",\\\"h4\\\",null,{\\\"className\\\":\\\"Footer_linkGroupTitle__dZ9OZ\\\",\\\"children\\\":\\\"고객 지원\\\"}],[\\\"$\\\",\\\"$L6\\\",null,{\\\"href\\\":\\\"/\\\",\\\"className\\\":\\\"Footer_link__EWWOW\\\",\\\"children\\\":\\\"자주 묻는 질문\\\"}],[\\\"$\\\",\\\"$L6\\\",null,{\\\"href\\\":\\\"/\\\",\\\"className\\\":\\\"Footer_link__EWWOW\\\",\\\"children\\\":\\\"예약 안내\\\"}],[\\\"$\\\",\\\"$L6\\\",null,{\\\"href\\\":\\\"/\\\",\\\"className\\\":\\\"Footer_link__EWWOW\\\",\\\"children\\\":\\\"단체 예약\\\"}]]}]]}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"Footer_bottom__O5rKs\\\",\\\"children\\\":[\\\"$\\\",\\\"p\\\",null,{\\\"className\\\":\\\"Footer_copy__IbaoR\\\",\\\"children\\\":\\\"© 2025 PuzzlePuzzle. All rights reserved.\\\"}]}]]}]}]]}]}]],null],null],\\\"couldBeIntercepted\\\":false,\\\"initialHead\\\":[[\\\"$\\\",\\\"meta\\\",null,{\\\"name\\\":\\\"robots\\\",\\\"content\\\":\\\"noindex\\\"}],\\\"$Lb\\\"],\\\"globalErrorComponent\\\":\\\"$c\\\",\\\"missingSlots\\\":\\\"$Wd\\\"}]\\n\"])</script><script>self.__next_f.push([1,\"b:[[\\\"$\\\",\\\"meta\\\",\\\"0\\\",{\\\"name\\\":\\\"viewport\\\",\\\"content\\\":\\\"width=device-width, initial-scale=1\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"1\\\",{\\\"charSet\\\":\\\"utf-8\\\"}],[\\\"$\\\",\\\"title\\\",\\\"2\\\",{\\\"children\\\":\\\"퍼즐퍼즐 | 방탈출 카페\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"3\\\",{\\\"name\\\":\\\"description\\\",\\\"content\\\":\\\"최고의 방탈출 경험 - 퍼즐퍼즐\\\"}]]\\n3:null\\n\"])</script></body></html>";
           }
         
     
@@ -25309,18 +25310,13 @@ var require_require = __commonJS({
           }
         
 
+          if (pagePath.endsWith(".next/server/app/api/settings/route.js")) {
+            return require("/Users/user/Library/CloudStorage/GoogleDrive-ypgwon@gmail.com/다른 컴퓨터/내 컴퓨터/First Work/PuzzlePuzzle/PuzzlePuzzl_Website/apps/web/.worker-next/.next/standalone/apps/web/.next/server/app/api/settings/route.js");
+          }
+        
+
           if (pagePath.endsWith(".next/server/app/api/themes/route.js")) {
             return require("/Users/user/Library/CloudStorage/GoogleDrive-ypgwon@gmail.com/다른 컴퓨터/내 컴퓨터/First Work/PuzzlePuzzle/PuzzlePuzzl_Website/apps/web/.worker-next/.next/standalone/apps/web/.next/server/app/api/themes/route.js");
-          }
-        
-
-          if (pagePath.endsWith(".next/server/app/themes/[id]/page.js")) {
-            return require("/Users/user/Library/CloudStorage/GoogleDrive-ypgwon@gmail.com/다른 컴퓨터/내 컴퓨터/First Work/PuzzlePuzzle/PuzzlePuzzl_Website/apps/web/.worker-next/.next/standalone/apps/web/.next/server/app/themes/[id]/page.js");
-          }
-        
-
-          if (pagePath.endsWith(".next/server/app/page.js")) {
-            return require("/Users/user/Library/CloudStorage/GoogleDrive-ypgwon@gmail.com/다른 컴퓨터/내 컴퓨터/First Work/PuzzlePuzzle/PuzzlePuzzl_Website/apps/web/.worker-next/.next/standalone/apps/web/.next/server/app/page.js");
           }
         
 
@@ -25329,8 +25325,13 @@ var require_require = __commonJS({
           }
         
 
-          if (pagePath.endsWith(".next/server/app/api/settings/route.js")) {
-            return require("/Users/user/Library/CloudStorage/GoogleDrive-ypgwon@gmail.com/다른 컴퓨터/내 컴퓨터/First Work/PuzzlePuzzle/PuzzlePuzzl_Website/apps/web/.worker-next/.next/standalone/apps/web/.next/server/app/api/settings/route.js");
+          if (pagePath.endsWith(".next/server/app/page.js")) {
+            return require("/Users/user/Library/CloudStorage/GoogleDrive-ypgwon@gmail.com/다른 컴퓨터/내 컴퓨터/First Work/PuzzlePuzzle/PuzzlePuzzl_Website/apps/web/.worker-next/.next/standalone/apps/web/.next/server/app/page.js");
+          }
+        
+
+          if (pagePath.endsWith(".next/server/app/themes/[id]/page.js")) {
+            return require("/Users/user/Library/CloudStorage/GoogleDrive-ypgwon@gmail.com/다른 컴퓨터/내 컴퓨터/First Work/PuzzlePuzzle/PuzzlePuzzl_Website/apps/web/.worker-next/.next/standalone/apps/web/.next/server/app/themes/[id]/page.js");
           }
         
 
@@ -30878,7 +30879,7 @@ CacheHandler = (await import('./cache-handler.mjs')).OpenNextCacheHandler;
         return !!(0, _require.getMaybePagePath)(pathname, this.distDir, (_this_nextConfig_i18n = this.nextConfig.i18n) == null ? void 0 : _this_nextConfig_i18n.locales, this.enabledDirectories.app);
       }
       getBuildId() {
-      return "gX40k9B7Bhen_2rWQjYju";
+      return "XTglRUG0P173ESYzVzQGV";
     
         const buildIdFile = (0, _path.join)(this.distDir, _constants.BUILD_ID_FILE);
         try {
