@@ -1,15 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Inter:wght@400;500;600&display=swap');
+
 :root {
-  /* Colors - HSL based */
-  --color-primary: 220 80% 50%;
-  --color-primary-hover: 220 80% 40%;
-  --color-background: 0 0% 100%;
-  --color-foreground: 0 0% 10%;
-  --color-surface: 0 0% 96%;
-  --color-surface-hover: 0 0% 90%;
-  --color-border: 0 0% 85%;
+  /* Colors - Deep Dark Theme with Gold/Yellow Accents */
+  --color-background: 0 0% 7%;      /* #121212 */
+  --color-foreground: 0 0% 95%;     /* #f2f2f2 */
+  --color-primary: 45 97% 51%;      /* #fbbd08 Gold/Yellow */
+  --color-primary-hover: 45 100% 40%;
+  --color-surface: 0 0% 12%;        /* #1e1e1e */
+  --color-surface-hover: 0 0% 17%;
+  --color-border: 0 0% 20%;         /* #333333 */
 
   /* Typography */
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Oswald', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   
   /* Spacing */
   --spacing-1: 0.25rem;
@@ -18,6 +21,7 @@
   --spacing-4: 1rem;
   --spacing-6: 1.5rem;
   --spacing-8: 2rem;
+  --spacing-12: 3rem;
   
   /* Radii */
   --radius-sm: 0.25rem;
@@ -28,14 +32,5 @@
   /* Transitions */
   --transition-fast: 150ms ease;
   --transition-normal: 250ms ease;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-background: 0 0% 5%;
-    --color-foreground: 0 0% 95%;
-    --color-surface: 0 0% 10%;
-    --color-surface-hover: 0 0% 15%;
-    --color-border: 0 0% 20%;
-  }
+  --transition-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
 }

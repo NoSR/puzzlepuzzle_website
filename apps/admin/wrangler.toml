@@ -1,13 +1,17 @@
-name = "admin"
-compatibility_date = "2024-04-05"
+name = "puzzlepuzzle-admin"
+main = ".worker-next/index.mjs"
+compatibility_date = "2024-09-23"
 compatibility_flags = ["nodejs_compat"]
-pages_build_output_dir = ".vercel/output/static"
+
+[assets]
+directory = ".worker-next/assets"
+binding = "ASSETS"
 
 [[d1_databases]]
 binding = "DB"
-database_name = "admin-db"
-database_id = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+database_name = "puzzlepuzzle-prod-db"
+database_id = "92c9e5cc-9920-41cf-a72f-ea2010b9e141"
 
 [[r2_buckets]]
 binding = "BUCKET"
-bucket_name = "admin-bucket"
+bucket_name = "puzzlepuzzle-media"

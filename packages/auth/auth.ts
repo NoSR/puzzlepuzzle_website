@@ -14,7 +14,7 @@ export const authConfig = {
   session: { strategy: "jwt" as const },
   callbacks: {
     signIn({ user }) {
-      const whitelist = process.env.ADMIN_WHITELIST?.split(',') || ['admin@example.com'];
+      const whitelist = process.env.ADMIN_WHITELIST?.split(',') || ['vivigi.corp@gmail.com'];
       if (user.email && whitelist.includes(user.email)) {
         return true;
       }

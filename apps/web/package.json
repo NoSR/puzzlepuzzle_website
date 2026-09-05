@@ -13,7 +13,7 @@
     "react-dom": "^18.3.1",
     "next": "^14.2.5",
     "@opennextjs/cloudflare": "^0.1.0",
-    "@puzzlepuzzle/ui": "workspace:*"
+    "@puzzlepuzzle/ui": "*"
   },
   "devDependencies": {
     "typescript": "^5",

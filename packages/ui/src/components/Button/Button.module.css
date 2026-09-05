@@ -4,10 +4,14 @@
   justify-content: center;
   border: none;
   cursor: pointer;
-  font-family: var(--font-sans);
+  font-family: var(--font-heading); /* Use heading font for stronger buttons */
+  text-transform: uppercase;
+  letter-spacing: 1px;
   font-weight: 500;
-  transition: all var(--transition-fast);
-  border-radius: var(--radius-md);
+  transition: all var(--transition-normal);
+  border-radius: var(--radius-sm);
+  position: relative;
+  overflow: hidden;
 }
 
 .button:disabled {
@@ -18,18 +22,24 @@
 /* Variants */
 .primary {
   background-color: hsl(var(--color-primary));
-  color: white;
+  color: #000; /* High contrast text on gold */
+  box-shadow: 0 4px 15px rgba(251, 189, 8, 0.2);
 }
 .primary:hover:not(:disabled) {
   background-color: hsl(var(--color-primary-hover));
+  box-shadow: 0 6px 20px rgba(251, 189, 8, 0.4);
+  transform: translateY(-2px);
 }
 
 .secondary {
   background-color: hsl(var(--color-surface));
-  color: hsl(var(--color-foreground));
+  color: hsl(var(--color-primary));
+  border: 1px solid hsl(var(--color-primary));
 }
 .secondary:hover:not(:disabled) {
-  background-color: hsl(var(--color-surface-hover));
+  background-color: hsl(var(--color-primary));
+  color: #000;
+  transform: translateY(-2px);
 }
 
 .outline {
@@ -39,18 +49,20 @@
 }
 .outline:hover:not(:disabled) {
   background-color: hsl(var(--color-surface));
+  border-color: hsl(var(--color-primary));
+  color: hsl(var(--color-primary));
 }
 
 /* Sizes */
 .sm {
-  padding: var(--spacing-2) var(--spacing-3);
-  font-size: 0.875rem;
+  padding: var(--spacing-2) var(--spacing-4);
+  font-size: 0.75rem;
 }
 .md {
-  padding: var(--spacing-3) var(--spacing-4);
-  font-size: 1rem;
+  padding: var(--spacing-3) var(--spacing-6);
+  font-size: 0.875rem;
 }
 .lg {
-  padding: var(--spacing-4) var(--spacing-6);
-  font-size: 1.125rem;
+  padding: var(--spacing-4) var(--spacing-8);
+  font-size: 1rem;
 }

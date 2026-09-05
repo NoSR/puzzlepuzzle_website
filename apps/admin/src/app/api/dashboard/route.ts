@@ -3,9 +3,9 @@ import { NextResponse } from 'next/server';
 export async function GET() {
   // 전체 테마 리스트 및 상태 더미 데이터
   const themes = [
-    { id: 1, name: 'Horror Escape', status: 'ACTIVE' },
+    { id: 1, name: '공포 Escape', status: 'ACTIVE' },
     { id: 2, name: 'Mystery Room', status: 'INACTIVE' },
-    { id: 3, name: 'Sci-Fi Adventure', status: 'ACTIVE' },
+    { id: 3, name: 'SF Adventure', status: 'ACTIVE' },
   ];
 
   // 일/주/월 단위 예상 매출액 더미 데이터

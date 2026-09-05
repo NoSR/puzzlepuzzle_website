@@ -2,17 +2,17 @@ import styles from './page.module.css';
 
 export default function ThemesPage() {
   const dummyThemes = [
-    { id: 1, name: 'Secret of the Pharaoh', duration: '60 min', difficulty: 'Hard', status: 'Active' },
+    { id: 1, name: 'Secret of the Pharaoh', duration: '60 min', difficulty: 'Hard', status: '활성' },
     { id: 2, name: 'Haunted Mansion', duration: '75 min', difficulty: 'Medium', status: 'Maintenance' },
-    { id: 3, name: 'Space Escape', duration: '60 min', difficulty: 'Medium', status: 'Active' },
-    { id: 4, name: 'Bank Heist', duration: '90 min', difficulty: 'Hard', status: 'Active' },
+    { id: 3, name: '우주 탈출', duration: '60 min', difficulty: 'Medium', status: '활성' },
+    { id: 4, name: '은행 강도', duration: '90 min', difficulty: 'Hard', status: '활성' },
   ];
 
   return (
     <div className={styles.container}>
       <div className={styles.header}>
         <div>
-          <h1>Themes Management</h1>
+          <h1>테마 목록 Management</h1>
           <p>Manage your escape room themes</p>
         </div>
         <button className={styles.addButton}>+ Add New Theme</button>
@@ -26,9 +26,9 @@ export default function ThemesPage() {
                 <th>ID</th>
                 <th>Name</th>
                 <th>Duration</th>
-                <th>Difficulty</th>
+                <th>난이도</th>
                 <th>Status</th>
-                <th>Actions</th>
+                <th>액션s</th>
               </tr>
             </thead>
             <tbody>
@@ -44,8 +44,8 @@ export default function ThemesPage() {
                     </span>
                   </td>
                   <td>
-                    <button className={styles.actionBtn}>Edit</button>
-                    <button className={`${styles.actionBtn} ${styles.danger}`}>Delete</button>
+                    <button className={styles.actionBtn}>수정</button>
+                    <button className={`${styles.actionBtn} ${styles.danger}`}>삭제</button>
                   </td>
                 </tr>
               ))}

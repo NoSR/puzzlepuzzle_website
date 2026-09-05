@@ -1,16 +1,16 @@
 import styles from './page.module.css';
 
-export default function SettingsPage() {
+export default function 설정Page() {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <h1>System Settings</h1>
+        <h1>System 설정</h1>
         <p>Configure global application settings</p>
       </div>
 
       <div className={styles.formContainer}>
         <div className={styles.section}>
-          <h2>Player App Settings</h2>
+          <h2>Player App 설정</h2>
           
           <div className={styles.formGroup}>
             <div className={styles.toggleRow}>
@@ -40,7 +40,7 @@ export default function SettingsPage() {
         </div>
 
         <div className={styles.section}>
-          <h2>Web App Settings</h2>
+          <h2>Web App 설정</h2>
           
           <div className={styles.formGroup}>
             <label className={styles.label}>Homepage Hero Banner URL</label>

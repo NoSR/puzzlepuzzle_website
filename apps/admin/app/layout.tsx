@@ -6,8 +6,8 @@ import styles from './layout.module.css';
 import '@puzzlepuzzle/ui/src/styles/theme.css';
 
 export const metadata: Metadata = {
-  title: 'PuzzlePuzzle Admin',
-  description: 'Admin Dashboard for PuzzlePuzzle',
+  title: 'Puzzle퍼즐 관리자',
+  description: 'Admin 대시보드 for PuzzlePuzzle',
 };
 
 export default function RootLayout({
@@ -21,12 +21,12 @@ export default function RootLayout({
         <div className={styles.layout}>
           <aside className={styles.sidebar}>
             <div className={styles.logo}>
-              <h2>Puzzle Admin</h2>
+              <h2>퍼즐 관리자</h2>
             </div>
             <nav className={styles.nav}>
-              <Link href="/" className={styles.navLink}>Dashboard</Link>
-              <Link href="/themes" className={styles.navLink}>Themes</Link>
-              <Link href="/settings" className={styles.navLink}>Settings</Link>
+              <Link href="/" className={styles.navLink}>대시보드</Link>
+              <Link href="/themes" className={styles.navLink}>테마 목록</Link>
+              <Link href="/settings" className={styles.navLink}>설정</Link>
             </nav>
           </aside>
           <main className={styles.main}>

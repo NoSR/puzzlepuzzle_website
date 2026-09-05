@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server';
 // GET: 테마 목록 조회
 export async function GET() {
   const dummyThemes = [
-    { id: 1, name: 'Horror Escape', description: 'Scary room', price: 20000 },
+    { id: 1, name: '공포 Escape', description: 'Scary room', price: 20000 },
     { id: 2, name: 'Mystery Room', description: 'Solve the mystery', price: 15000 },
   ];
   return NextResponse.json(dummyThemes);
@@ -36,7 +36,7 @@ export async function DELETE(request: Request) {
   try {
     const { searchParams } = new URL(request.url);
     const id = searchParams.get('id');
-    // TODO: DB Delete logic here
+    // TODO: DB 삭제 logic here
     return NextResponse.json({ success: true, id });
   } catch (error) {
     return NextResponse.json({ success: false, error: 'Invalid request' }, { status: 400 });

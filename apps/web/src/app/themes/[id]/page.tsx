@@ -15,18 +15,18 @@ export default function ThemeDetailPage({ params }: { params: { id: string } }) 
 
   return (
     <div className={styles.container}>
-      <div className={styles.hero}>Hero Image Placeholder</div>
+      <div className={styles.hero}>Hero 이미지 준비중</div>
       
       <div className={styles.details}>
         <h1>{theme.title}</h1>
-        <p><strong>Genre:</strong> {theme.genre}</p>
-        <p><strong>Difficulty:</strong> {theme.difficulty}</p>
+        <p><strong>장르:</strong> {theme.genre}</p>
+        <p><strong>난이도:</strong> {theme.difficulty}</p>
         <p><strong>Duration:</strong> {theme.duration}</p>
         <p><strong>Players:</strong> {theme.players}</p>
         <p>{theme.description}</p>
       </div>
 
-      <div className={styles.reservationAction}>
+      <div className={styles.reservation액션}>
         <h2>Ready to Escape?</h2>
         <p>Reservation feature coming soon!</p>
         <Button variant="primary" size="lg">Book Now</Button>
