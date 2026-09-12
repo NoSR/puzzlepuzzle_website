@@ -1,19 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap');
 
 :root {
-  /* Colors - Deep Dark Theme with Gold/Yellow Accents */
-  --color-background: 0 0% 7%;      /* #121212 */
-  --color-foreground: 0 0% 95%;     /* #f2f2f2 */
-  --color-primary: 45 97% 51%;      /* #fbbd08 Gold/Yellow */
+  /* Colors - Deep Dark Theme with Gold/Yellow Accents (Legacy HSL) */
+  --color-background: 0 0% 7%;
+  --color-foreground: 0 0% 95%;
+  --color-primary: 45 97% 51%;
   --color-primary-hover: 45 100% 40%;
-  --color-surface: 0 0% 12%;        /* #1e1e1e */
+  --color-surface: 0 0% 12%;
   --color-surface-hover: 0 0% 17%;
-  --color-border: 0 0% 20%;         /* #333333 */
+  --color-border: 0 0% 20%;
 
-  /* Typography */
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-heading: 'Oswald', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  /* Color System (oklch) */
+  --color-bg-deep: oklch(14.5% 0.04 277); /* #07071a */
+  --color-bg-mid: oklch(17.6% 0.04 277);  /* #0d0d22 */
+  --color-gold: oklch(82.5% 0.18 84);     /* #fbbd08 */
   
+  --color-gold-dim: color-mix(in oklch, var(--color-gold) 40%, transparent);
+  --color-gold-subtle: color-mix(in oklch, var(--color-gold) 15%, transparent);
+  --color-surface-glass: oklch(22% 0.04 277 / 0.45); /* #1a1a2e / 0.45 */
+  --color-border-subtle: oklch(100% 0 0 / 0.07); /* white / 0.07 */
+  --color-border-gold: color-mix(in oklch, var(--color-gold) 35%, transparent);
+
+  /* Typography Fonts */
+  --font-display: 'Bebas Neue', sans-serif;
+  --font-heading: 'Bebas Neue', sans-serif;
+  --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-label: 'Space Grotesk', sans-serif;
+
+  /* Typography Scale */
+  --text-xs: 0.625rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 2rem;
+  --text-4xl: clamp(2.5rem, 5vw, 3.5rem);
+  --text-display: clamp(3.5rem, 10vw, 7rem);
+  --leading-tight: 0.9;
+  --leading-snug: 1.2;
+  --leading-body: 1.75;
+  --tracking-wide: 0.08em;
+  --tracking-widest: 0.2em;
+
   /* Spacing */
   --spacing-1: 0.25rem;
   --spacing-2: 0.5rem;
@@ -22,15 +51,48 @@
   --spacing-6: 1.5rem;
   --spacing-8: 2rem;
   --spacing-12: 3rem;
-  
+  --spacing-16: 4rem;
+  --spacing-20: 5rem;
+  --spacing-24: 6rem;
+  --section-padding-y: clamp(5rem, 10vw, 8rem);
+  --section-padding-x: clamp(1rem, 5vw, 3rem);
+  --max-width: 1280px;
+  --max-width-content: 860px;
+
   /* Radii */
   --radius-sm: 0.25rem;
   --radius-md: 0.5rem;
   --radius-lg: 1rem;
+  --radius-card: 0.75rem;
   --radius-full: 9999px;
 
   /* Transitions */
   --transition-fast: 150ms ease;
   --transition-normal: 250ms ease;
   --transition-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Animation / Easing */
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-dramatic: cubic-bezier(0.7, 0, 0.3, 1);
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-fast: 150ms;
+  --duration-normal: 300ms;
+  --duration-slow: 600ms;
+  --duration-slower: 1000ms;
+
+  /* Layers / Z-index */
+  --z-base: 0;
+  --z-overlay: 10;
+  --z-modal: 100;
+  --z-nav: 1000;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
