@@ -3,14 +3,16 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import styles from './GNB.module.css';
+import { useStore } from '../context/StoreContext';
 
 export default function GNB() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const { openBookingModal } = useStore();
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
+      setScrolled(window.scrollY > 40);
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
@@ -33,22 +35,34 @@ export default function GNB() {
       <Link href="/" className={styles.logo} onClick={() => setMenuOpen(false)}>
         <span className={styles.logoText}>PUZZLE</span>
         <span className={styles.logoAccent}>PUZZLE</span>
+        <span className={styles.logoBadge}>2026</span>
       </Link>
 
       {/* 데스크톱 링크 */}
       <div className={styles.links} role="list">
+        <Link href="/" className={styles.link} role="listitem">
+          홈
+        </Link>
         <Link href="/themes" className={styles.link} role="listitem">
-          테마 목록
+          게임 예약
         </Link>
-        <Link href="/reservation" className={styles.link} role="listitem">
-          예약 안내
+        <Link href="/reviews" className={styles.link} role="listitem">
+          고객 리뷰
         </Link>
-        <Link href="/login" className={styles.link} role="listitem">
-          로그인
+        <Link href="/notices" className={styles.link} role="listitem">
+          공지 & 이벤트
         </Link>
-        <Link href="/themes" className={styles.cta} role="listitem">
-          예약하기
+        <Link href="/about" className={styles.link} role="listitem">
+          브랜드 소개
         </Link>
+        <button
+          onClick={() => openBookingModal()}
+          className={styles.cta}
+          role="listitem"
+          style={{ cursor: 'pointer', border: 'none' }}
+        >
+          지금 예약 🎯
+        </button>
       </div>
 
       {/* 모바일 햄버거 버튼 */}
@@ -73,34 +87,31 @@ export default function GNB() {
           aria-modal="true"
           aria-label="모바일 메뉴"
         >
-          <Link
-            href="/themes"
-            className={styles.mobileLink}
-            onClick={() => setMenuOpen(false)}
-          >
-            테마 목록
+          <Link href="/" className={styles.mobileLink} onClick={() => setMenuOpen(false)}>
+            홈
           </Link>
-          <Link
-            href="/reservation"
-            className={styles.mobileLink}
-            onClick={() => setMenuOpen(false)}
-          >
-            예약 안내
+          <Link href="/themes" className={styles.mobileLink} onClick={() => setMenuOpen(false)}>
+            게임 예약
           </Link>
-          <Link
-            href="/login"
-            className={styles.mobileLink}
-            onClick={() => setMenuOpen(false)}
-          >
-            로그인
+          <Link href="/reviews" className={styles.mobileLink} onClick={() => setMenuOpen(false)}>
+            고객 리뷰
           </Link>
-          <Link
-            href="/themes"
+          <Link href="/notices" className={styles.mobileLink} onClick={() => setMenuOpen(false)}>
+            공지 & 이벤트
+          </Link>
+          <Link href="/about" className={styles.mobileLink} onClick={() => setMenuOpen(false)}>
+            브랜드 소개
+          </Link>
+          <button
+            onClick={() => {
+              setMenuOpen(false);
+              openBookingModal();
+            }}
             className={`${styles.mobileLink} ${styles.mobileCta}`}
-            onClick={() => setMenuOpen(false)}
+            style={{ cursor: 'pointer', border: 'none' }}
           >
-            예약하기
-          </Link>
+            지금 예약 🎯
+          </button>
         </div>
       )}
     </nav>

@@ -1,368 +1,241 @@
-/* ========================================
-   Themes Page — CSS Module
-   2026 Design System
-   ======================================== */
+/* ===================================================
+   Themes / Games Page — AI Studio Neon Theme CSS
+   =================================================== */
 
-/* 컨테이너 */
 .container {
-  background: var(--color-bg-deep, #07071a);
   min-height: 100vh;
+  background-color: var(--color-bg-deep, #020618);
+  padding: 8rem 1.5rem 6rem;
+  max-width: 1240px;
+  margin: 0 auto;
 }
 
-/* ── 페이지 Hero ── */
-.pageHero {
-  position: relative;
-  padding: 10rem var(--section-padding-x, 2rem) 5rem;
+.pageHeader {
   text-align: center;
-  overflow: hidden;
-  background: var(--color-bg-deep, #07071a);
-}
-
-.pageHeroBg {
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(
-    ellipse 70% 80% at 50% 0%,
-    rgba(251, 189, 8, 0.06) 0%,
-    transparent 70%
-  );
-  pointer-events: none;
-}
-
-.pageHeroContent {
-  position: relative;
-  z-index: 1;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.pageHeroLabel {
-  font-family: var(--font-label, 'Space Grotesk', sans-serif);
-  font-size: 0.7rem;
-  letter-spacing: var(--tracking-widest, 0.2em);
-  color: hsl(var(--color-primary));
-  margin-bottom: 1rem;
-  display: block;
-}
-
-.pageHeroTitle {
-  font-family: var(--font-display, 'Bebas Neue', sans-serif);
-  font-size: var(--text-display, clamp(3.5rem, 10vw, 7rem));
-  color: white;
-  margin: 0 0 1.5rem;
-  line-height: var(--leading-tight, 0.9);
-  letter-spacing: 2px;
-}
-
-.pageHeroSub {
-  font-family: var(--font-sans, 'DM Sans', sans-serif);
-  font-size: var(--text-lg, 1.125rem);
-  color: rgba(255, 255, 255, 0.55);
-  line-height: var(--leading-body, 1.75);
-  margin: 0;
-}
-
-/* ── 테마 섹션 ── */
-.themesSection {
-  padding: var(--section-padding-y, clamp(5rem, 10vw, 8rem))
-    var(--section-padding-x, clamp(1rem, 5vw, 3rem));
-  max-width: calc(var(--max-width, 1280px) + 2 * var(--section-padding-x, 2rem));
-  margin: 0 auto;
-}
-
-/* 4열 그리드 (데스크톱) */
-.themeGrid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: var(--spacing-4, 1rem);
   margin-bottom: 4rem;
 }
 
-/* ── 카드 ── */
-.themeCard {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid var(--color-border-subtle, rgba(255, 255, 255, 0.07));
-  border-radius: var(--radius-card, 0.75rem);
-  overflow: hidden;
-  text-decoration: none;
-  color: inherit;
+.pageTag {
+  font-family: var(--font-label, 'Space Grotesk', sans-serif);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: #ec4899;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.pageTitle {
+  font-family: var(--font-display, 'Bebas Neue', sans-serif);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  color: #ffffff;
+  margin: 0 0 1rem 0;
+  letter-spacing: -0.5px;
+}
+
+.pageSubtitle {
+  font-size: 1.05rem;
+  color: #94a3b8;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ── 테마 리스트 (상세 카드 형태) ─────────────────── */
+.themesList {
   display: flex;
   flex-direction: column;
-  transition:
-    transform var(--duration-normal, 300ms) var(--ease-spring, cubic-bezier(0.34, 1.56, 0.64, 1)),
-    border-color var(--duration-normal, 300ms) var(--ease-smooth, cubic-bezier(0.4, 0, 0.2, 1)),
-    box-shadow var(--duration-normal, 300ms) var(--ease-smooth, cubic-bezier(0.4, 0, 0.2, 1));
-  opacity: 1;
-  transform: translateY(0);
-  animation: cardEnter 0.6s var(--ease-smooth, cubic-bezier(0.4, 0, 0.2, 1)) backwards;
-  animation-delay: var(--delay, 0ms);
+  gap: 3rem;
 }
 
-@keyframes cardEnter {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.themeCard:hover {
-  transform: translateY(-8px);
-  border-color: var(--color-border-gold, rgba(251, 189, 8, 0.35));
-  box-shadow:
-    0 20px 60px rgba(0, 0, 0, 0.6),
-    0 0 20px var(--color-gold-dim, rgba(251, 189, 8, 0.1));
-}
-
-/* ── 이미지 영역 ── */
-.imageWrapper {
-  position: relative;
-  width: 100%;
-  height: 200px;
+.themeItemCard {
+  background: #0f172b;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1.5rem;
   overflow: hidden;
+  display: grid;
+  grid-template-columns: 460px 1fr;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
 }
 
-.imageBg {
-  position: absolute;
-  inset: 0;
-  transition: transform var(--duration-slow, 600ms) var(--ease-smooth, cubic-bezier(0.4, 0, 0.2, 1));
+.themeItemCard:hover {
+  transform: translateY(-4px);
+  border-color: rgba(168, 85, 247, 0.4);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 30px rgba(168, 85, 247, 0.15);
 }
 
-.themeCard:hover .imageBg {
-  transform: scale(1.08);
+.imageSection {
+  position: relative;
+  min-height: 380px;
+}
+
+.themeImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .imageOverlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(7, 7, 26, 0.8) 0%, transparent 60%);
-  z-index: 1;
+  background: linear-gradient(to right, transparent 50%, #0f172b 100%);
 }
 
-.cardBadges {
+.badgesOverlay {
   position: absolute;
-  top: 0.75rem;
-  left: 0.75rem;
+  top: 1.25rem;
+  left: 1.25rem;
   display: flex;
-  gap: 0.4rem;
+  gap: 0.5rem;
   z-index: 2;
 }
 
-.genreBadge {
-  font-family: var(--font-label, 'Space Grotesk', sans-serif);
-  font-size: 0.6rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  padding: 3px 8px;
-  background: rgba(0, 0, 0, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 3px;
-  color: white;
-  backdrop-filter: blur(8px);
-}
-
-.tagBadge {
-  font-family: var(--font-label, 'Space Grotesk', sans-serif);
-  font-size: 0.6rem;
+.badgeCategory {
+  font-size: 0.7rem;
   font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  padding: 3px 8px;
-  background: hsl(var(--color-primary));
-  border-radius: 3px;
-  color: #000;
-}
-
-.cardOverlayInfo {
-  position: absolute;
-  bottom: 0.75rem;
-  right: 0.75rem;
-  display: flex;
-  gap: 0.4rem;
-  z-index: 2;
-}
-
-.durationBadge,
-.playersBadge {
-  font-family: var(--font-label, 'Space Grotesk', sans-serif);
-  font-size: 0.6rem;
-  padding: 3px 8px;
-  background: rgba(0, 0, 0, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 3px;
-  color: rgba(255, 255, 255, 0.8);
+  padding: 0.3rem 0.75rem;
+  background: rgba(2, 6, 24, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 9999px;
+  color: #ffffff;
   backdrop-filter: blur(8px);
 }
 
-/* ── 그래디언트 배경 ── */
-.gradient1 {
-  background: linear-gradient(135deg, #1a0a2e 0%, #2d1b69 100%);
-}
-.gradient2 {
-  background: linear-gradient(135deg, #0a1628 0%, #0d3b6e 100%);
-}
-.gradient3 {
-  background: linear-gradient(135deg, #1a0800 0%, #6b1a0a 100%);
-}
-.gradient4 {
-  background: linear-gradient(135deg, #0a1a0a 0%, #1a4a1a 100%);
+.badgeHighlight {
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.3rem 0.75rem;
+  background: #ec4899;
+  border-radius: 9999px;
+  color: #ffffff;
+  box-shadow: 0 0 12px rgba(236, 72, 153, 0.6);
 }
 
-/* ── 카드 내용 ── */
-.cardContent {
-  padding: 1.25rem;
+.infoSection {
+  padding: 2.5rem;
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+  justify-content: space-between;
 }
 
-.cardTitle {
+.infoHeader {
+  margin-bottom: 1.5rem;
+}
+
+.themeTitle {
   font-family: var(--font-display, 'Bebas Neue', sans-serif);
-  font-size: 1.5rem;
-  color: white;
-  margin: 0 0 0.5rem;
-  letter-spacing: 1px;
-  line-height: 1.1;
+  font-size: 2.25rem;
+  color: #ffffff;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: 0.5px;
 }
 
-.cardDesc {
-  font-family: var(--font-sans, 'DM Sans', sans-serif);
-  font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.45);
-  line-height: 1.6;
-  margin: 0 0 1rem;
-  flex-grow: 1;
+.themeSubtitle {
+  font-size: 0.95rem;
+  color: #c084fc;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
 }
 
-.cardFooter {
+.themeDesc {
+  font-size: 0.925rem;
+  color: #94a3b8;
+  line-height: 1.7;
+  margin: 0;
+  white-space: pre-line;
+}
+
+.tagRow {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  margin: 1.5rem 0;
+}
+
+.tag {
+  font-size: 0.75rem;
+  color: #cbd5e1;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 0.25rem 0.6rem;
+  border-radius: 9999px;
+}
+
+.actionFooter {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-top: 1px solid var(--color-border-subtle, rgba(255, 255, 255, 0.07));
-  padding-top: 0.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
-/* ── 난이도 메터 ── */
-.difficultyMeter {
+.metaGrid {
   display: flex;
+  gap: 1.5rem;
   align-items: center;
-  gap: 0.4rem;
 }
 
-.diffLabel {
-  font-family: var(--font-label, 'Space Grotesk', sans-serif);
-  font-size: 0.6rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.diffDots {
+.metaItem {
   display: flex;
-  gap: 3px;
+  flex-direction: column;
+  gap: 0.15rem;
 }
 
-.dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  display: block;
-}
-
-.dotFilled {
-  background: hsl(var(--color-primary));
-}
-
-.dotEmpty {
-  background: rgba(255, 255, 255, 0.15);
-}
-
-.diffValue {
-  font-family: var(--font-label, 'Space Grotesk', sans-serif);
+.metaLabel {
   font-size: 0.7rem;
+  color: #64748b;
+  text-transform: uppercase;
   font-weight: 600;
-  color: hsl(var(--color-primary));
-  letter-spacing: 0.05em;
 }
 
-.cardArrow {
-  color: rgba(255, 255, 255, 0.2);
-  transition:
-    color var(--duration-fast, 150ms),
-    transform var(--duration-fast, 150ms);
-}
-
-.themeCard:hover .cardArrow {
-  color: hsl(var(--color-primary));
-  transform: translateX(4px);
-}
-
-/* ── 예약 CTA ── */
-.bookingCta {
-  text-align: center;
-  padding: 2.5rem;
-  border: 1px solid var(--color-border-subtle, rgba(255, 255, 255, 0.07));
-  border-radius: var(--radius-card, 0.75rem);
-  background: rgba(255, 255, 255, 0.02);
-}
-
-.bookingCtaText {
-  font-family: var(--font-sans, 'DM Sans', sans-serif);
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 0.9375rem;
-  margin: 0 0 1.25rem;
-}
-
-.bookingCtaBtn {
-  font-family: var(--font-label, 'Space Grotesk', sans-serif);
-  font-size: 0.875rem;
+.metaValue {
+  font-size: 0.95rem;
   font-weight: 600;
-  color: hsl(var(--color-primary));
-  text-decoration: none;
-  letter-spacing: 0.05em;
-  transition: opacity 0.2s;
+  color: #ffffff;
 }
 
-.bookingCtaBtn:hover {
-  opacity: 0.8;
+.priceDisplay {
+  font-family: var(--font-display, 'Bebas Neue', sans-serif);
+  font-size: 1.75rem;
+  color: #a855f7;
+  letter-spacing: 0.5px;
 }
 
-/* ── 반응형 ── */
-@media (max-width: 1200px) {
-  .themeGrid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+.bookBtn {
+  padding: 0.85rem 1.75rem;
+  background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
+  color: #ffffff;
+  border-radius: 9999px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 25px rgba(168, 85, 247, 0.4);
+  transition: all 0.2s ease;
 }
 
-@media (max-width: 768px) {
-  .themeGrid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .pageHero {
-    padding: 8rem 1.5rem 3rem;
-  }
+.bookBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 35px rgba(168, 85, 247, 0.6);
 }
 
-@media (max-width: 480px) {
-  .themeGrid {
+/* ── Responsive ───────────────────────────────────── */
+@media (max-width: 1024px) {
+  .themeItemCard {
     grid-template-columns: 1fr;
   }
-}
-
-/* ── prefers-reduced-motion ── */
-@media (prefers-reduced-motion: reduce) {
-  .themeCard {
-    animation: none;
+  .imageSection {
+    min-height: 260px;
+    height: 260px;
   }
-  .themeCard:hover {
-    transform: none;
+  .imageOverlay {
+    background: linear-gradient(to top, #0f172b 0%, transparent 100%);
   }
-  .imageBg {
-    transition: none;
+  .infoSection {
+    padding: 1.75rem;
   }
 }
-

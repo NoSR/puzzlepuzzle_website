@@ -1,127 +1,104 @@
-import Link from 'next/link';
-import styles from './themes.module.css';
+'use client';
 
-const themes = [
-  {
-    id: '1',
-    title: '미스터리 맨션',
-    genre: '공포',
-    difficulty: 'HARD',
-    difficultyLabel: '어려움',
-    duration: '60분',
-    minPlayers: 2,
-    maxPlayers: 6,
-    desc: '1920년대 저택에 숨겨진 진실. 어둠 속에서 단서를 모아라.',
-    tag: 'BESTSELLER',
-    gradientClass: 'gradient1',
-  },
-  {
-    id: '2',
-    title: '우주 탈출',
-    genre: 'SF',
-    difficulty: 'MEDIUM',
-    difficultyLabel: '보통',
-    duration: '60분',
-    minPlayers: 2,
-    maxPlayers: 4,
-    desc: '산소가 0이 되기 전에. 우주선에서 살아남아라.',
-    tag: 'NEW',
-    gradientClass: 'gradient2',
-  },
-  {
-    id: '3',
-    title: '은행 강도',
-    genre: '액션',
-    difficulty: 'MEDIUM',
-    difficultyLabel: '보통',
-    duration: '75분',
-    minPlayers: 3,
-    maxPlayers: 8,
-    desc: '9단계 보안 시스템을 뚫어라. 경보가 울리기 전에.',
-    tag: null,
-    gradientClass: 'gradient3',
-  },
-  {
-    id: '4',
-    title: '정글 퀘스트',
-    genre: '어드벤처',
-    difficulty: 'EASY',
-    difficultyLabel: '쉬움',
-    duration: '60분',
-    minPlayers: 2,
-    maxPlayers: 6,
-    desc: '고대 문명의 유적을 탐험하라. 함정을 피하며 보물을 찾아라.',
-    tag: null,
-    gradientClass: 'gradient4',
-  },
-];
+import React from 'react';
+import Image from 'next/image';
+import styles from './themes.module.css';
+import { useStore } from '../../context/StoreContext';
+import NoiseOverlay from '../../components/NoiseOverlay';
 
 export default function ThemesPage() {
+  const { games, openBookingModal } = useStore();
+
   return (
     <div className={styles.container}>
-      {/* 페이지 Hero */}
-      <header className={styles.pageHero}>
-        <div className={styles.pageHeroBg} />
-        <div className={styles.pageHeroContent}>
-          <p className={styles.pageHeroLabel}>ESCAPE ROOMS</p>
-          <h1 className={styles.pageHeroTitle}>모든 테마</h1>
-          <p className={styles.pageHeroSub}>
-            당신의 팀에게 완벽한 도전을 선택하세요. 총 {themes.length}개의 테마가 준비되어 있습니다.
-          </p>
-        </div>
+      <NoiseOverlay opacity={0.03} />
+
+      <header className={styles.pageHeader}>
+        <span className={styles.pageTag}>SELECT YOUR MISSION</span>
+        <h1 className={styles.pageTitle}>게임 테마 예약</h1>
+        <p className={styles.pageSubtitle}>
+          퍼즐퍼즐만의 차별화된 3D 큐브 기믹과 감성 공간이 결합된 3가지 시그니처 테마를 만나보세요.
+        </p>
       </header>
 
-      {/* 테마 그리드 */}
-      <section className={styles.themesSection}>
-        <div className={styles.themeGrid}>
-          {themes.map((theme, i) => (
-            <Link
-              key={theme.id}
-              href={`/themes/${theme.id}`}
-              className={styles.themeCard}
-              style={{ '--delay': `${i * 80}ms` } as React.CSSProperties}
-            >
-              {/* 이미지 영역 */}
-              <div className={styles.imageWrapper}>
-                <div className={`${styles.imageBg} ${styles[theme.gradientClass]}`} />
-                <div className={styles.imageOverlay} />
-                <div className={styles.cardBadges}>
-                  <span className={styles.genreBadge}>{theme.genre}</span>
-                  {theme.tag && <span className={styles.tagBadge}>{theme.tag}</span>}
-                </div>
-                <div className={styles.cardOverlayInfo}>
-                  <span className={styles.durationBadge}>⏱ {theme.duration}</span>
-                  <span className={styles.playersBadge}>👥 {theme.minPlayers}~{theme.maxPlayers}인</span>
+      <div className={styles.themesList}>
+        {games.map((game) => (
+          <article key={game.id} className={styles.themeItemCard} id={game.id}>
+            {/* 좌측 이미지 */}
+            <div className={styles.imageSection}>
+              <Image
+                src={game.image}
+                alt={game.title}
+                width={800}
+                height={600}
+                className={styles.themeImg}
+                priority
+              />
+              <div className={styles.imageOverlay} />
+              <div className={styles.badgesOverlay}>
+                <span className={styles.badgeCategory}>{game.category}</span>
+                {game.highlightBadges.map((b, idx) => (
+                  <span key={idx} className={styles.badgeHighlight}>
+                    {b}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* 우측 정보 */}
+            <div className={styles.infoSection}>
+              <div className={styles.infoHeader}>
+                <h2 className={styles.themeTitle}>{game.title}</h2>
+                <div className={styles.themeSubtitle}>{game.subtitle}</div>
+                <p className={styles.themeDesc}>{game.description}</p>
+
+                <div className={styles.tagRow}>
+                  {game.tags.map((tag, idx) => (
+                    <span key={idx} className={styles.tag}>
+                      #{tag}
+                    </span>
+                  ))}
                 </div>
               </div>
 
-              {/* 카드 내용 */}
-              <div className={styles.cardContent}>
-                <h2 className={styles.cardTitle}>{theme.title}</h2>
-                <p className={styles.cardDesc}>{theme.desc}</p>
-                <div className={styles.cardFooter}>
-                  <div className={styles.difficultyMeter}>
-                    <span className={styles.diffLabel}>난이도</span>
-                    <div className={styles.diffDots}>
-                      <span className={`${styles.dot} ${theme.difficulty !== 'EASY' ? styles.dotFilled : styles.dotEmpty}`} />
-                      <span className={`${styles.dot} ${theme.difficulty === 'MEDIUM' || theme.difficulty === 'HARD' ? styles.dotFilled : styles.dotEmpty}`} />
-                      <span className={`${styles.dot} ${theme.difficulty === 'HARD' ? styles.dotFilled : styles.dotEmpty}`} />
-                    </div>
-                    <span className={styles.diffValue}>{theme.difficultyLabel}</span>
+              <div className={styles.actionFooter}>
+                <div className={styles.metaGrid}>
+                  <div className={styles.metaItem}>
+                    <span className={styles.metaLabel}>난이도</span>
+                    <span className={styles.metaValue} style={{ color: '#f59e0b' }}>
+                      {'★'.repeat(game.difficulty) + '☆'.repeat(5 - game.difficulty)}
+                    </span>
                   </div>
-                  <span className={styles.cardArrow}>→</span>
-                </div>
-              </div>
-            </Link>
-          ))}
-        </div>
 
-        {/* 예약 CTA */}
-        <div className={styles.bookingCta}>
-          <p className={styles.bookingCtaText}>원하는 테마를 찾지 못하셨나요? 단체 예약은 별도 문의해 주세요.</p>
-          <Link href="/" className={styles.bookingCtaBtn}>단체 예약 문의 →</Link>
-        </div>
-      </section>
+                  <div className={styles.metaItem}>
+                    <span className={styles.metaLabel}>제한 시간</span>
+                    <span className={styles.metaValue}>{game.playTimeMinutes}분</span>
+                  </div>
+
+                  <div className={styles.metaItem}>
+                    <span className={styles.metaLabel}>추천 인원</span>
+                    <span className={styles.metaValue}>{game.minPlayers}~{game.maxPlayers}인</span>
+                  </div>
+
+                  <div className={styles.metaItem}>
+                    <span className={styles.metaLabel}>1인 요금</span>
+                    <span className={styles.priceDisplay}>
+                      {game.pricePerPerson.toLocaleString()}원
+                    </span>
+                  </div>
+                </div>
+
+                <button
+                  onClick={() => openBookingModal(game)}
+                  className={styles.bookBtn}
+                >
+                  이 테마 예약하기 🎯
+                </button>
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
     </div>
   );
 }

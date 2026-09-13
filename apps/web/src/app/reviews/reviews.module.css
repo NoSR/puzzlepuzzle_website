@@ -1,0 +1,195 @@
+.container {
+  min-height: 100vh;
+  background-color: var(--color-bg-deep, #020618);
+  padding: 8rem 1.5rem 6rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pageHeader {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.pageTag {
+  font-family: var(--font-label, 'Space Grotesk', sans-serif);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: #ec4899;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.pageTitle {
+  font-family: var(--font-display, 'Bebas Neue', sans-serif);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  color: #ffffff;
+  margin: 0 0 1rem 0;
+}
+
+.statsBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.5rem;
+  background: rgba(15, 23, 43, 0.7);
+  border: 1px solid rgba(168, 85, 247, 0.25);
+  border-radius: 1rem;
+  max-width: 600px;
+  margin: 0 auto 3rem auto;
+  box-shadow: 0 0 25px rgba(168, 85, 247, 0.15);
+}
+
+.statItem {
+  text-align: center;
+}
+
+.statVal {
+  font-family: var(--font-display, 'Bebas Neue', sans-serif);
+  font-size: 2.25rem;
+  color: #a855f7;
+  line-height: 1;
+}
+
+.statLabel {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  margin-top: 0.25rem;
+}
+
+/* ── 작성 폼 ──────────────────────────────────────── */
+.formToggleBtn {
+  display: block;
+  margin: 0 auto 2.5rem auto;
+  padding: 0.8rem 1.75rem;
+  background: rgba(168, 85, 247, 0.15);
+  border: 1px solid #a855f7;
+  color: #ffffff;
+  border-radius: 9999px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.formToggleBtn:hover {
+  background: #a855f7;
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+}
+
+.reviewFormBox {
+  background: #0f172b;
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  border-radius: 1rem;
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto 3rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.formInput {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: #1e293b;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  color: #ffffff;
+  outline: none;
+}
+
+/* ── 리뷰 그리드 ──────────────────────────────────── */
+.reviewsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.reviewCard {
+  background: #0f172b;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.reviewCard:hover {
+  transform: translateY(-4px);
+  border-color: rgba(168, 85, 247, 0.4);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.reviewerRow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid rgba(168, 85, 247, 0.4);
+}
+
+.reviewerName {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #ffffff;
+}
+
+.gameName {
+  font-size: 0.75rem;
+  color: #ec4899;
+}
+
+.stars {
+  color: #f59e0b;
+  font-size: 0.95rem;
+  margin: 0.25rem 0;
+}
+
+.reviewContent {
+  font-size: 0.9rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin: 0;
+  flex: 1;
+}
+
+.tagRow {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  font-size: 0.7rem;
+  color: #94a3b8;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+@media (max-width: 1024px) {
+  .reviewsGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .reviewsGrid {
+    grid-template-columns: 1fr;
+  }
+  .statsBar {
+    gap: 1rem;
+  }
+}

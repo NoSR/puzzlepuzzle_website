@@ -44,41 +44,40 @@ export default function Footer() {
 
           {/* 테마 링크 */}
           <div className={styles.linkCol}>
-            <h3 className={styles.colTitle}>테마</h3>
+            <h3 className={styles.colTitle}>게임 테마</h3>
             <nav aria-label="테마 목록">
-              <Link href="/themes/1" className={styles.footerLink}>미스터리 맨션</Link>
-              <Link href="/themes/2" className={styles.footerLink}>우주 탈출</Link>
-              <Link href="/themes/3" className={styles.footerLink}>은행 강도</Link>
-              <Link href="/themes/4" className={styles.footerLink}>정글 퀘스트</Link>
+              <Link href="/themes#game-1" className={styles.footerLink}>큐브 스페이스: 차원의 문</Link>
+              <Link href="/themes#game-2" className={styles.footerLink}>미스테리 룸: 아티팩트의 비밀</Link>
+              <Link href="/themes#game-3" className={styles.footerLink}>마법의 퍼즐 저택</Link>
             </nav>
           </div>
 
-          {/* 고객 지원 */}
+          {/* 바로가기 */}
           <div className={styles.linkCol}>
-            <h3 className={styles.colTitle}>고객 지원</h3>
-            <nav aria-label="고객 지원">
-              <Link href="/" className={styles.footerLink}>예약 안내</Link>
-              <Link href="/" className={styles.footerLink}>자주 묻는 질문</Link>
-              <Link href="/" className={styles.footerLink}>단체 예약</Link>
-              <Link href="/" className={styles.footerLink}>오시는 길</Link>
+            <h3 className={styles.colTitle}>바로가기</h3>
+            <nav aria-label="바로가기">
+              <Link href="/themes" className={styles.footerLink}>실시간 게임 예약</Link>
+              <Link href="/reviews" className={styles.footerLink}>생생 고객 리뷰</Link>
+              <Link href="/notices" className={styles.footerLink}>공지 & 이벤트</Link>
+              <Link href="/about" className={styles.footerLink}>브랜드 소개 & 위치</Link>
             </nav>
           </div>
 
           {/* 매장 정보 */}
           <div className={styles.infoCol}>
-            <h3 className={styles.colTitle}>매장 정보</h3>
+            <h3 className={styles.colTitle}>홍대 스토어</h3>
             <address className={styles.address}>
               <p className={styles.infoItem}>
-                <span className={styles.infoLabel}>주소</span>
-                서울시 강남구 테헤란로 123
+                <span className={styles.infoLabel}>위치</span>
+                서울특별시 마포구 와우산로 21길 19 (홍대입구역 9번 출구 도보 5분)
               </p>
               <p className={styles.infoItem}>
                 <span className={styles.infoLabel}>전화</span>
-                010-0000-0000
+                02-789-1024
               </p>
               <p className={styles.infoItem}>
-                <span className={styles.infoLabel}>운영</span>
-                매일 10:00 – 23:00
+                <span className={styles.infoLabel}>운영시간</span>
+                매일 11:00 ~ 23:00 (연중무휴)
               </p>
             </address>
           </div>

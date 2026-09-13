@@ -1,0 +1,136 @@
+.container {
+  min-height: 100vh;
+  background-color: var(--color-bg-deep, #020618);
+  padding: 8rem 1.5rem 6rem;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.pageHeader {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.pageTag {
+  font-family: var(--font-label, 'Space Grotesk', sans-serif);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: #ec4899;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.pageTitle {
+  font-family: var(--font-display, 'Bebas Neue', sans-serif);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  color: #ffffff;
+  margin: 0 0 1rem 0;
+}
+
+.storyBox {
+  background: rgba(15, 23, 43, 0.7);
+  border: 1px solid rgba(168, 85, 247, 0.25);
+  border-radius: 1.5rem;
+  padding: 3rem;
+  margin-bottom: 3.5rem;
+  box-shadow: 0 0 35px rgba(168, 85, 247, 0.12);
+  backdrop-filter: blur(16px);
+}
+
+.storyLead {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.storyText {
+  font-size: 1rem;
+  color: #94a3b8;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.featureGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.featureItem {
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background: rgba(168, 85, 247, 0.08);
+  border: 1px solid rgba(168, 85, 247, 0.2);
+}
+
+.featureItemPink {
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background: rgba(236, 72, 153, 0.08);
+  border: 1px solid rgba(236, 72, 153, 0.2);
+}
+
+.featureTitle {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 0.5rem 0;
+}
+
+.featureText {
+  font-size: 0.9rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ── 스토어 정보 & 오시는 길 ──────────────────────── */
+.storeInfoCard {
+  background: #0f172b;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.infoCol h3 {
+  font-family: var(--font-display, 'Bebas Neue', sans-serif);
+  font-size: 1.85rem;
+  color: #ffffff;
+  margin: 0 0 1.25rem 0;
+}
+
+.infoRow {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.infoLabel {
+  font-weight: 700;
+  color: #ec4899;
+  min-width: 70px;
+}
+
+.infoVal {
+  color: #cbd5e1;
+}
+
+@media (max-width: 768px) {
+  .featureGrid,
+  .storeInfoCard {
+    grid-template-columns: 1fr;
+  }
+  .storyBox {
+    padding: 2rem 1.5rem;
+  }
+}

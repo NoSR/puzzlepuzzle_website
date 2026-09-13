@@ -144,7 +144,7 @@ function ParallaxHero({ title, genre, tagline }: { title: string; genre: string;
 }
 
 export default function ThemeDetailPage({ params }: { params: { id: string } }) {
-  const theme = THEMES[params.id] || THEMES['1'];
+  const theme = THEMES[params.id] || THEMES[params.id.replace('game-', '')] || THEMES['1'];
 
   return (
     <div className={styles.page}>
