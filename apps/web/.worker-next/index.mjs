@@ -24937,7 +24937,7 @@ var require_load_manifest = __commonJS({
     function loadManifest(path, shouldCache = true, cache = sharedCache) {
     
           if (path.endsWith(".next/routes-manifest.json")) {
-            return {"version":3,"pages404":true,"caseSensitive":false,"basePath":"","redirects":[{"source":"/:path+/","destination":"/:path+","internal":true,"statusCode":308,"regex":"^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"}],"headers":[],"dynamicRoutes":[{"page":"/themes/[id]","regex":"^/themes/([^/]+?)(?:/)?$","routeKeys":{"nxtPid":"nxtPid"},"namedRegex":"^/themes/(?<nxtPid>[^/]+?)(?:/)?$"}],"staticRoutes":[{"page":"/","regex":"^/(?:/)?$","routeKeys":{},"namedRegex":"^/(?:/)?$"},{"page":"/_not-found","regex":"^/_not\\-found(?:/)?$","routeKeys":{},"namedRegex":"^/_not\\-found(?:/)?$"},{"page":"/login","regex":"^/login(?:/)?$","routeKeys":{},"namedRegex":"^/login(?:/)?$"},{"page":"/themes","regex":"^/themes(?:/)?$","routeKeys":{},"namedRegex":"^/themes(?:/)?$"}],"dataRoutes":[],"rsc":{"header":"RSC","varyHeader":"RSC, Next-Router-State-Tree, Next-Router-Prefetch","prefetchHeader":"Next-Router-Prefetch","didPostponeHeader":"x-nextjs-postponed","contentTypeHeader":"text/x-component","suffix":".rsc","prefetchSuffix":".prefetch.rsc"},"rewrites":[]};
+            return {"version":3,"pages404":true,"caseSensitive":false,"basePath":"","redirects":[{"source":"/:path+/","destination":"/:path+","internal":true,"statusCode":308,"regex":"^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"}],"headers":[],"dynamicRoutes":[{"page":"/themes/[id]","regex":"^/themes/([^/]+?)(?:/)?$","routeKeys":{"nxtPid":"nxtPid"},"namedRegex":"^/themes/(?<nxtPid>[^/]+?)(?:/)?$"}],"staticRoutes":[{"page":"/","regex":"^/(?:/)?$","routeKeys":{},"namedRegex":"^/(?:/)?$"},{"page":"/_not-found","regex":"^/_not\\-found(?:/)?$","routeKeys":{},"namedRegex":"^/_not\\-found(?:/)?$"},{"page":"/about","regex":"^/about(?:/)?$","routeKeys":{},"namedRegex":"^/about(?:/)?$"},{"page":"/login","regex":"^/login(?:/)?$","routeKeys":{},"namedRegex":"^/login(?:/)?$"},{"page":"/notices","regex":"^/notices(?:/)?$","routeKeys":{},"namedRegex":"^/notices(?:/)?$"},{"page":"/reviews","regex":"^/reviews(?:/)?$","routeKeys":{},"namedRegex":"^/reviews(?:/)?$"},{"page":"/themes","regex":"^/themes(?:/)?$","routeKeys":{},"namedRegex":"^/themes(?:/)?$"}],"dataRoutes":[],"rsc":{"header":"RSC","varyHeader":"RSC, Next-Router-State-Tree, Next-Router-Prefetch","prefetchHeader":"Next-Router-Prefetch","didPostponeHeader":"x-nextjs-postponed","contentTypeHeader":"text/x-component","suffix":".rsc","prefetchSuffix":".prefetch.rsc"},"rewrites":[]};
           }
         
 
@@ -24947,7 +24947,7 @@ var require_load_manifest = __commonJS({
         
 
           if (path.endsWith(".next/prerender-manifest.json")) {
-            return {"version":4,"routes":{"/api/themes":{"initialHeaders":{"content-type":"application/json","x-next-cache-tags":"_N_T_/layout,_N_T_/api/layout,_N_T_/api/themes/layout,_N_T_/api/themes/route,_N_T_/api/themes"},"experimentalBypassFor":[{"type":"header","key":"Next-Action"},{"type":"header","key":"content-type","value":"multipart/form-data;.*"}],"initialRevalidateSeconds":false,"srcRoute":"/api/themes","dataRoute":null},"/themes":{"experimentalBypassFor":[{"type":"header","key":"Next-Action"},{"type":"header","key":"content-type","value":"multipart/form-data;.*"}],"initialRevalidateSeconds":false,"srcRoute":"/themes","dataRoute":"/themes.rsc"},"/":{"experimentalBypassFor":[{"type":"header","key":"Next-Action"},{"type":"header","key":"content-type","value":"multipart/form-data;.*"}],"initialRevalidateSeconds":false,"srcRoute":"/","dataRoute":"/index.rsc"},"/api/settings":{"initialHeaders":{"content-type":"application/json","x-next-cache-tags":"_N_T_/layout,_N_T_/api/layout,_N_T_/api/settings/layout,_N_T_/api/settings/route,_N_T_/api/settings"},"experimentalBypassFor":[{"type":"header","key":"Next-Action"},{"type":"header","key":"content-type","value":"multipart/form-data;.*"}],"initialRevalidateSeconds":false,"srcRoute":"/api/settings","dataRoute":null},"/login":{"experimentalBypassFor":[{"type":"header","key":"Next-Action"},{"type":"header","key":"content-type","value":"multipart/form-data;.*"}],"initialRevalidateSeconds":false,"srcRoute":"/login","dataRoute":"/login.rsc"}},"dynamicRoutes":{},"notFoundRoutes":[],"preview":{"previewModeId":"1d6d74f36845ce99eabc388f322f449f","previewModeSigningKey":"03ad0c2eb19ec94052c72aaea2e1bce1286068c5834d5eb60cd290d3617c1661","previewModeEncryptionKey":"5eaf1e1d23a1edeaff192731c1865531c94ecc0e23c7865e387c191c95bb42b8"}};
+            return {"version":4,"routes":{"/api/settings":{"initialHeaders":{"content-type":"application/json","x-next-cache-tags":"_N_T_/layout,_N_T_/api/layout,_N_T_/api/settings/layout,_N_T_/api/settings/route,_N_T_/api/settings"},"experimentalBypassFor":[{"type":"header","key":"Next-Action"},{"type":"header","key":"content-type","value":"multipart/form-data;.*"}],"initialRevalidateSeconds":false,"srcRoute":"/api/settings","dataRoute":null},"/reviews":{"experimentalBypassFor":[{"type":"header","key":"Next-Action"},{"type":"header","key":"content-type","value":"multipart/form-data;.*"}],"initialRevalidateSeconds":false,"srcRoute":"/reviews","dataRoute":"/reviews.rsc"},"/themes":{"experimentalBypassFor":[{"type":"header","key":"Next-Action"},{"type":"header","key":"content-type","value":"multipart/form-data;.*"}],"initialRevalidateSeconds":false,"srcRoute":"/themes","dataRoute":"/themes.rsc"},"/notices":{"experimentalBypassFor":[{"type":"header","key":"Next-Action"},{"type":"header","key":"content-type","value":"multipart/form-data;.*"}],"initialRevalidateSeconds":false,"srcRoute":"/notices","dataRoute":"/notices.rsc"},"/api/themes":{"initialHeaders":{"content-type":"application/json","x-next-cache-tags":"_N_T_/layout,_N_T_/api/layout,_N_T_/api/themes/layout,_N_T_/api/themes/route,_N_T_/api/themes"},"experimentalBypassFor":[{"type":"header","key":"Next-Action"},{"type":"header","key":"content-type","value":"multipart/form-data;.*"}],"initialRevalidateSeconds":false,"srcRoute":"/api/themes","dataRoute":null},"/login":{"experimentalBypassFor":[{"type":"header","key":"Next-Action"},{"type":"header","key":"content-type","value":"multipart/form-data;.*"}],"initialRevalidateSeconds":false,"srcRoute":"/login","dataRoute":"/login.rsc"},"/about":{"experimentalBypassFor":[{"type":"header","key":"Next-Action"},{"type":"header","key":"content-type","value":"multipart/form-data;.*"}],"initialRevalidateSeconds":false,"srcRoute":"/about","dataRoute":"/about.rsc"},"/":{"experimentalBypassFor":[{"type":"header","key":"Next-Action"},{"type":"header","key":"content-type","value":"multipart/form-data;.*"}],"initialRevalidateSeconds":false,"srcRoute":"/","dataRoute":"/index.rsc"}},"dynamicRoutes":{},"notFoundRoutes":[],"preview":{"previewModeId":"aa586022e18f80688c0f312efab62a33","previewModeSigningKey":"d507c50a5c88da3fdd4aaf301d226f0b43de9d629348699a48210797baab5732","previewModeEncryptionKey":"f46f18da5be1faf69b8d149ee21ee30d53783ee96405c3a2f8391a3de3d09d00"}};
           }
         
 
@@ -24959,26 +24959,26 @@ var require_load_manifest = __commonJS({
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/XTglRUG0P173ESYzVzQGV/_buildManifest.js",
-    "static/XTglRUG0P173ESYzVzQGV/_ssgManifest.js"
+    "static/hARumL4TE4qbeGisAeYlk/_buildManifest.js",
+    "static/hARumL4TE4qbeGisAeYlk/_ssgManifest.js"
   ],
   "rootMainFiles": [
-    "static/chunks/webpack-32ae1d00c5918c71.js",
-    "static/chunks/1dd3208c-6a9c9e74f589d906.js",
-    "static/chunks/528-0e36a24e094951d1.js",
+    "static/chunks/webpack-1f54ea24b0c78c1e.js",
+    "static/chunks/1dd3208c-6ed69b2af984ef21.js",
+    "static/chunks/528-905a643a8bbf1f1a.js",
     "static/chunks/main-app-3bcd6311cde5d757.js"
   ],
   "pages": {
     "/_app": [
-      "static/chunks/webpack-32ae1d00c5918c71.js",
+      "static/chunks/webpack-1f54ea24b0c78c1e.js",
       "static/chunks/framework-3664cab31236a9fa.js",
-      "static/chunks/main-1e635637e42b96b4.js",
+      "static/chunks/main-f29aa1daf76beaec.js",
       "static/chunks/pages/_app-10a93ab5b7c32eb3.js"
     ],
     "/_error": [
-      "static/chunks/webpack-32ae1d00c5918c71.js",
+      "static/chunks/webpack-1f54ea24b0c78c1e.js",
       "static/chunks/framework-3664cab31236a9fa.js",
-      "static/chunks/main-1e635637e42b96b4.js",
+      "static/chunks/main-f29aa1daf76beaec.js",
       "static/chunks/pages/_error-2d792b2a41857be4.js"
     ]
   },
@@ -24988,7 +24988,7 @@ var require_load_manifest = __commonJS({
         
 
           if (path.endsWith(".next/app-path-routes-manifest.json")) {
-            return {"/_not-found/page":"/_not-found","/api/settings/route":"/api/settings","/api/themes/route":"/api/themes","/login/page":"/login","/page":"/","/themes/[id]/page":"/themes/[id]","/themes/page":"/themes"};
+            return {"/_not-found/page":"/_not-found","/about/page":"/about","/api/settings/route":"/api/settings","/api/themes/route":"/api/themes","/login/page":"/login","/page":"/","/reviews/page":"/reviews","/notices/page":"/notices","/themes/[id]/page":"/themes/[id]","/themes/page":"/themes"};
           }
         
 
@@ -24996,57 +24996,82 @@ var require_load_manifest = __commonJS({
             return {
   "pages": {
     "/_not-found/page": [
-      "static/chunks/webpack-32ae1d00c5918c71.js",
-      "static/chunks/1dd3208c-6a9c9e74f589d906.js",
-      "static/chunks/528-0e36a24e094951d1.js",
+      "static/chunks/webpack-1f54ea24b0c78c1e.js",
+      "static/chunks/1dd3208c-6ed69b2af984ef21.js",
+      "static/chunks/528-905a643a8bbf1f1a.js",
       "static/chunks/main-app-3bcd6311cde5d757.js",
-      "static/chunks/app/_not-found/page-6920725531cdc8de.js"
+      "static/chunks/app/_not-found/page-badba67ed89de7a7.js"
     ],
     "/layout": [
-      "static/chunks/webpack-32ae1d00c5918c71.js",
-      "static/chunks/1dd3208c-6a9c9e74f589d906.js",
-      "static/chunks/528-0e36a24e094951d1.js",
+      "static/chunks/webpack-1f54ea24b0c78c1e.js",
+      "static/chunks/1dd3208c-6ed69b2af984ef21.js",
+      "static/chunks/528-905a643a8bbf1f1a.js",
       "static/chunks/main-app-3bcd6311cde5d757.js",
-      "static/css/6829acef4c2b0f69.css",
-      "static/chunks/340-c41c02fbba14927b.js",
-      "static/chunks/app/layout-f245aab77481e294.js"
+      "static/css/770887bdab183263.css",
+      "static/chunks/146-2263b0d2548c6e31.js",
+      "static/chunks/app/layout-7b6ff203d81fa339.js"
+    ],
+    "/about/page": [
+      "static/chunks/webpack-1f54ea24b0c78c1e.js",
+      "static/chunks/1dd3208c-6ed69b2af984ef21.js",
+      "static/chunks/528-905a643a8bbf1f1a.js",
+      "static/chunks/main-app-3bcd6311cde5d757.js",
+      "static/css/b1ee8f6e4b961788.css",
+      "static/chunks/app/about/page-70f16a1a726dbc39.js"
     ],
     "/login/page": [
-      "static/chunks/webpack-32ae1d00c5918c71.js",
-      "static/chunks/1dd3208c-6a9c9e74f589d906.js",
-      "static/chunks/528-0e36a24e094951d1.js",
+      "static/chunks/webpack-1f54ea24b0c78c1e.js",
+      "static/chunks/1dd3208c-6ed69b2af984ef21.js",
+      "static/chunks/528-905a643a8bbf1f1a.js",
       "static/chunks/main-app-3bcd6311cde5d757.js",
-      "static/css/e2d4137bb4dcbc5d.css",
+      "static/css/c83344c47c0a4b37.css",
       "static/chunks/app/login/page-c81bcd22779ce2e1.js"
     ],
     "/page": [
-      "static/chunks/webpack-32ae1d00c5918c71.js",
-      "static/chunks/1dd3208c-6a9c9e74f589d906.js",
-      "static/chunks/528-0e36a24e094951d1.js",
+      "static/chunks/webpack-1f54ea24b0c78c1e.js",
+      "static/chunks/1dd3208c-6ed69b2af984ef21.js",
+      "static/chunks/528-905a643a8bbf1f1a.js",
       "static/chunks/main-app-3bcd6311cde5d757.js",
-      "static/css/023aa4b21ac38b2a.css",
-      "static/css/e2d4137bb4dcbc5d.css",
-      "static/chunks/340-c41c02fbba14927b.js",
-      "static/chunks/app/page-7c4cb92da096032a.js"
+      "static/css/975b7528c8bbc17f.css",
+      "static/chunks/146-2263b0d2548c6e31.js",
+      "static/chunks/294-fa36aa12d538a64d.js",
+      "static/chunks/app/page-3e9e2fb28cf067d4.js"
+    ],
+    "/reviews/page": [
+      "static/chunks/webpack-1f54ea24b0c78c1e.js",
+      "static/chunks/1dd3208c-6ed69b2af984ef21.js",
+      "static/chunks/528-905a643a8bbf1f1a.js",
+      "static/chunks/main-app-3bcd6311cde5d757.js",
+      "static/css/5b3585151b84b713.css",
+      "static/chunks/294-fa36aa12d538a64d.js",
+      "static/chunks/app/reviews/page-21e87dbfd8f4420d.js"
+    ],
+    "/notices/page": [
+      "static/chunks/webpack-1f54ea24b0c78c1e.js",
+      "static/chunks/1dd3208c-6ed69b2af984ef21.js",
+      "static/chunks/528-905a643a8bbf1f1a.js",
+      "static/chunks/main-app-3bcd6311cde5d757.js",
+      "static/css/138575d1bfca3e60.css",
+      "static/chunks/app/notices/page-0ad65ab505c83ec8.js"
     ],
     "/themes/[id]/page": [
-      "static/chunks/webpack-32ae1d00c5918c71.js",
-      "static/chunks/1dd3208c-6a9c9e74f589d906.js",
-      "static/chunks/528-0e36a24e094951d1.js",
+      "static/chunks/webpack-1f54ea24b0c78c1e.js",
+      "static/chunks/1dd3208c-6ed69b2af984ef21.js",
+      "static/chunks/528-905a643a8bbf1f1a.js",
       "static/chunks/main-app-3bcd6311cde5d757.js",
       "static/css/402c00c533fea8a6.css",
-      "static/css/e2d4137bb4dcbc5d.css",
-      "static/chunks/340-c41c02fbba14927b.js",
-      "static/chunks/app/themes/[id]/page-c26aa7d5c4027324.js"
+      "static/css/c83344c47c0a4b37.css",
+      "static/chunks/146-2263b0d2548c6e31.js",
+      "static/chunks/app/themes/[id]/page-e966baf110cba582.js"
     ],
     "/themes/page": [
-      "static/chunks/webpack-32ae1d00c5918c71.js",
-      "static/chunks/1dd3208c-6a9c9e74f589d906.js",
-      "static/chunks/528-0e36a24e094951d1.js",
+      "static/chunks/webpack-1f54ea24b0c78c1e.js",
+      "static/chunks/1dd3208c-6ed69b2af984ef21.js",
+      "static/chunks/528-905a643a8bbf1f1a.js",
       "static/chunks/main-app-3bcd6311cde5d757.js",
-      "static/css/3b84ec841175d664.css",
-      "static/chunks/340-c41c02fbba14927b.js",
-      "static/chunks/app/themes/page-2ac8bbcf729c011d.js"
+      "static/css/494eea0434d61aa8.css",
+      "static/chunks/294-fa36aa12d538a64d.js",
+      "static/chunks/app/themes/page-356c46550d7a555e.js"
     ]
   }
 };
@@ -25054,7 +25079,7 @@ var require_load_manifest = __commonJS({
         
 
           if (path.endsWith(".next/server/server-reference-manifest.json")) {
-            return {"node":{},"edge":{},"encryptionKey":"affLc02dGPf0I7RHsn1FUQsBqCPywD+HnCn/mEKD+Ps="};
+            return {"node":{},"edge":{},"encryptionKey":"xMYsR6sFoMjCT2JsS31w/GWWiMh1ohD+bvjhfLOxISY="};
           }
         
 
@@ -25086,10 +25111,13 @@ var require_load_manifest = __commonJS({
           if (path.endsWith(".next/server/app-paths-manifest.json")) {
             return {
   "/_not-found/page": "app/_not-found/page.js",
+  "/about/page": "app/about/page.js",
   "/api/settings/route": "app/api/settings/route.js",
   "/api/themes/route": "app/api/themes/route.js",
   "/login/page": "app/login/page.js",
   "/page": "app/page.js",
+  "/reviews/page": "app/reviews/page.js",
+  "/notices/page": "app/notices/page.js",
   "/themes/[id]/page": "app/themes/[id]/page.js",
   "/themes/page": "app/themes/page.js"
 };
@@ -25142,11 +25170,41 @@ var require_load_manifest = __commonJS({
 			  }
 			
 
+			  if (path.endsWith(".next/server/app/reviews/page_client-reference-manifest.js")) {
+				require("/Users/user/Library/CloudStorage/GoogleDrive-ypgwon@gmail.com/다른 컴퓨터/내 컴퓨터/First Work/PuzzlePuzzle/PuzzlePuzzl_Website/apps/web/.worker-next/.next/standalone/apps/web/.next/server/app/reviews/page_client-reference-manifest.js");
+				return {
+				  __RSC_MANIFEST: {
+					"/reviews/page": globalThis.__RSC_MANIFEST["/reviews/page"],
+				  },
+				};
+			  }
+			
+
+			  if (path.endsWith(".next/server/app/notices/page_client-reference-manifest.js")) {
+				require("/Users/user/Library/CloudStorage/GoogleDrive-ypgwon@gmail.com/다른 컴퓨터/내 컴퓨터/First Work/PuzzlePuzzle/PuzzlePuzzl_Website/apps/web/.worker-next/.next/standalone/apps/web/.next/server/app/notices/page_client-reference-manifest.js");
+				return {
+				  __RSC_MANIFEST: {
+					"/notices/page": globalThis.__RSC_MANIFEST["/notices/page"],
+				  },
+				};
+			  }
+			
+
 			  if (path.endsWith(".next/server/app/login/page_client-reference-manifest.js")) {
 				require("/Users/user/Library/CloudStorage/GoogleDrive-ypgwon@gmail.com/다른 컴퓨터/내 컴퓨터/First Work/PuzzlePuzzle/PuzzlePuzzl_Website/apps/web/.worker-next/.next/standalone/apps/web/.next/server/app/login/page_client-reference-manifest.js");
 				return {
 				  __RSC_MANIFEST: {
 					"/login/page": globalThis.__RSC_MANIFEST["/login/page"],
+				  },
+				};
+			  }
+			
+
+			  if (path.endsWith(".next/server/app/about/page_client-reference-manifest.js")) {
+				require("/Users/user/Library/CloudStorage/GoogleDrive-ypgwon@gmail.com/다른 컴퓨터/내 컴퓨터/First Work/PuzzlePuzzle/PuzzlePuzzl_Website/apps/web/.worker-next/.next/standalone/apps/web/.next/server/app/about/page_client-reference-manifest.js");
+				return {
+				  __RSC_MANIFEST: {
+					"/about/page": globalThis.__RSC_MANIFEST["/about/page"],
 				  },
 				};
 			  }
@@ -25286,7 +25344,7 @@ var require_require = __commonJS({
       const pagePath = getPagePath(page, distDir, void 0, isAppPath);
     
           if (pagePath.endsWith(".next/server/pages/404.html")) {
-            return "<!DOCTYPE html><html lang=\"ko\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"stylesheet\" href=\"/_next/static/css/6829acef4c2b0f69.css\" data-precedence=\"next\"/><link rel=\"preload\" as=\"script\" fetchPriority=\"low\" href=\"/_next/static/chunks/webpack-32ae1d00c5918c71.js\"/><script src=\"/_next/static/chunks/1dd3208c-6a9c9e74f589d906.js\" async=\"\"></script><script src=\"/_next/static/chunks/528-0e36a24e094951d1.js\" async=\"\"></script><script src=\"/_next/static/chunks/main-app-3bcd6311cde5d757.js\" async=\"\"></script><script src=\"/_next/static/chunks/340-c41c02fbba14927b.js\" async=\"\"></script><script src=\"/_next/static/chunks/app/layout-f245aab77481e294.js\" async=\"\"></script><meta name=\"robots\" content=\"noindex\"/><title>404: This page could not be found.</title><title>퍼즐퍼즐 | 방탈출 카페</title><meta name=\"description\" content=\"최고의 방탈출 경험 - 퍼즐퍼즐\"/><script src=\"/_next/static/chunks/polyfills-42372ed130431b0a.js\" noModule=\"\"></script></head><body><nav class=\"GNB_nav__b_wE_\"><a class=\"GNB_logo__cf6fw\" href=\"/\">Puzzle<span>Puzzle</span></a><div class=\"GNB_links__zZRNS\"><a class=\"GNB_link__2onZk\" href=\"/themes\">테마 목록</a><a class=\"GNB_link__2onZk\" href=\"/login\">로그인</a></div></nav><main><div style=\"font-family:system-ui,&quot;Segoe UI&quot;,Roboto,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;;height:100vh;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center\"><div><style>body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}</style><h1 class=\"next-error-h1\" style=\"display:inline-block;margin:0 20px 0 0;padding:0 23px 0 0;font-size:24px;font-weight:500;vertical-align:top;line-height:49px\">404</h1><div style=\"display:inline-block\"><h2 style=\"font-size:14px;font-weight:400;line-height:49px;margin:0\">This page could not be found.</h2></div></div></div></main><footer class=\"Footer_footer__UaG1g\"><div class=\"Footer_inner__ACAek\"><div class=\"Footer_top__b4wwC\"><div><a class=\"Footer_logo__NsUJK\" href=\"/\">Puzzle<span>Puzzle</span></a><p class=\"Footer_brandDesc__oUQ_R\">몰입형 방탈출 경험의 새로운 기준.<br/>당신의 한계를 시험하세요.</p></div><div class=\"Footer_links__oDyjI\"><div class=\"Footer_linkGroup__3skIZ\"><h4 class=\"Footer_linkGroupTitle__dZ9OZ\">테마</h4><a class=\"Footer_link__EWWOW\" href=\"/themes/1\">미스터리 맨션</a><a class=\"Footer_link__EWWOW\" href=\"/themes/2\">우주 탈출</a><a class=\"Footer_link__EWWOW\" href=\"/themes/3\">은행 강도</a></div><div class=\"Footer_linkGroup__3skIZ\"><h4 class=\"Footer_linkGroupTitle__dZ9OZ\">고객 지원</h4><a class=\"Footer_link__EWWOW\" href=\"/\">자주 묻는 질문</a><a class=\"Footer_link__EWWOW\" href=\"/\">예약 안내</a><a class=\"Footer_link__EWWOW\" href=\"/\">단체 예약</a></div></div></div><div class=\"Footer_bottom__O5rKs\"><p class=\"Footer_copy__IbaoR\">© 2025 PuzzlePuzzle. All rights reserved.</p></div></div></footer><script src=\"/_next/static/chunks/webpack-32ae1d00c5918c71.js\" async=\"\"></script><script>(self.__next_f=self.__next_f||[]).push([0]);self.__next_f.push([2,null])</script><script>self.__next_f.push([1,\"1:HL[\\\"/_next/static/css/6829acef4c2b0f69.css\\\",\\\"style\\\"]\\n\"])</script><script>self.__next_f.push([1,\"2:I[1815,[],\\\"\\\"]\\n4:I[5092,[],\\\"\\\"]\\n5:I[2023,[],\\\"\\\"]\\n6:I[6340,[\\\"340\\\",\\\"static/chunks/340-c41c02fbba14927b.js\\\",\\\"185\\\",\\\"static/chunks/app/layout-f245aab77481e294.js\\\"],\\\"\\\"]\\nc:I[1584,[],\\\"\\\"]\\n7:{\\\"fontFamily\\\":\\\"system-ui,\\\\\\\"Segoe UI\\\\\\\",Roboto,Helvetica,Arial,sans-serif,\\\\\\\"Apple Color Emoji\\\\\\\",\\\\\\\"Segoe UI Emoji\\\\\\\"\\\",\\\"height\\\":\\\"100vh\\\",\\\"textAlign\\\":\\\"center\\\",\\\"display\\\":\\\"flex\\\",\\\"flexDirection\\\":\\\"column\\\",\\\"alignItems\\\":\\\"center\\\",\\\"justifyContent\\\":\\\"center\\\"}\\n8:{\\\"display\\\":\\\"inline-block\\\",\\\"margin\\\":\\\"0 20px 0 0\\\",\\\"padding\\\":\\\"0 23px 0 0\\\",\\\"fontSize\\\":24,\\\"fontWeight\\\":500,\\\"verticalAlign\\\":\\\"top\\\",\\\"lineHeight\\\":\\\"49px\\\"}\\n9:{\\\"display\\\":\\\"inline-block\\\"}\\na:{\\\"fontSize\\\":14,\\\"fontWeight\\\":400,\\\"lineHeight\\\":\\\"49px\\\",\\\"margin\\\":0}\\nd:[]\\n\"])</script><script>self.__next_f.push([1,\"0:[\\\"$\\\",\\\"$L2\\\",null,{\\\"buildId\\\":\\\"XTglRUG0P173ESYzVzQGV\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"_not-found\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"/_not-found\\\",{\\\"children\\\":[\\\"__PAGE__\\\",{}]}]},\\\"$undefined\\\",\\\"$undefined\\\",true],\\\"initialSeedData\\\":[\\\"\\\",{\\\"children\\\":[\\\"/_not-found\\\",{\\\"children\\\":[\\\"__PAGE__\\\",{},[[\\\"$L3\\\",[[\\\"$\\\",\\\"title\\\",null,{\\\"children\\\":\\\"404: This page could not be found.\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"style\\\":{\\\"fontFamily\\\":\\\"system-ui,\\\\\\\"Segoe UI\\\\\\\",Roboto,Helvetica,Arial,sans-serif,\\\\\\\"Apple Color Emoji\\\\\\\",\\\\\\\"Segoe UI Emoji\\\\\\\"\\\",\\\"height\\\":\\\"100vh\\\",\\\"textAlign\\\":\\\"center\\\",\\\"display\\\":\\\"flex\\\",\\\"flexDirection\\\":\\\"column\\\",\\\"alignItems\\\":\\\"center\\\",\\\"justifyContent\\\":\\\"center\\\"},\\\"children\\\":[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"style\\\",null,{\\\"dangerouslySetInnerHTML\\\":{\\\"__html\\\":\\\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\\\"}}],[\\\"$\\\",\\\"h1\\\",null,{\\\"className\\\":\\\"next-error-h1\\\",\\\"style\\\":{\\\"display\\\":\\\"inline-block\\\",\\\"margin\\\":\\\"0 20px 0 0\\\",\\\"padding\\\":\\\"0 23px 0 0\\\",\\\"fontSize\\\":24,\\\"fontWeight\\\":500,\\\"verticalAlign\\\":\\\"top\\\",\\\"lineHeight\\\":\\\"49px\\\"},\\\"children\\\":\\\"404\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"style\\\":{\\\"display\\\":\\\"inline-block\\\"},\\\"children\\\":[\\\"$\\\",\\\"h2\\\",null,{\\\"style\\\":{\\\"fontSize\\\":14,\\\"fontWeight\\\":400,\\\"lineHeight\\\":\\\"49px\\\",\\\"margin\\\":0},\\\"children\\\":\\\"This page could not be found.\\\"}]}]]}]}]],null],null],null]},[null,[\\\"$\\\",\\\"$L4\\\",null,{\\\"parallelRouterKey\\\":\\\"children\\\",\\\"segmentPath\\\":[\\\"children\\\",\\\"/_not-found\\\",\\\"children\\\"],\\\"error\\\":\\\"$undefined\\\",\\\"errorStyles\\\":\\\"$undefined\\\",\\\"errorScripts\\\":\\\"$undefined\\\",\\\"template\\\":[\\\"$\\\",\\\"$L5\\\",null,{}],\\\"templateStyles\\\":\\\"$undefined\\\",\\\"templateScripts\\\":\\\"$undefined\\\",\\\"notFound\\\":\\\"$undefined\\\",\\\"notFoundStyles\\\":\\\"$undefined\\\"}]],null]},[[[[\\\"$\\\",\\\"link\\\",\\\"0\\\",{\\\"rel\\\":\\\"stylesheet\\\",\\\"href\\\":\\\"/_next/static/css/6829acef4c2b0f69.css\\\",\\\"precedence\\\":\\\"next\\\",\\\"crossOrigin\\\":\\\"$undefined\\\"}]],[\\\"$\\\",\\\"html\\\",null,{\\\"lang\\\":\\\"ko\\\",\\\"children\\\":[\\\"$\\\",\\\"body\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"nav\\\",null,{\\\"className\\\":\\\"GNB_nav__b_wE_\\\",\\\"children\\\":[[\\\"$\\\",\\\"$L6\\\",null,{\\\"href\\\":\\\"/\\\",\\\"className\\\":\\\"GNB_logo__cf6fw\\\",\\\"children\\\":[\\\"Puzzle\\\",[\\\"$\\\",\\\"span\\\",null,{\\\"children\\\":\\\"Puzzle\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"GNB_links__zZRNS\\\",\\\"children\\\":[[\\\"$\\\",\\\"$L6\\\",null,{\\\"href\\\":\\\"/themes\\\",\\\"className\\\":\\\"GNB_link__2onZk\\\",\\\"children\\\":\\\"테마 목록\\\"}],[\\\"$\\\",\\\"$L6\\\",null,{\\\"href\\\":\\\"/login\\\",\\\"className\\\":\\\"GNB_link__2onZk\\\",\\\"children\\\":\\\"로그인\\\"}]]}]]}],[\\\"$\\\",\\\"main\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"$L4\\\",null,{\\\"parallelRouterKey\\\":\\\"children\\\",\\\"segmentPath\\\":[\\\"children\\\"],\\\"error\\\":\\\"$undefined\\\",\\\"errorStyles\\\":\\\"$undefined\\\",\\\"errorScripts\\\":\\\"$undefined\\\",\\\"template\\\":[\\\"$\\\",\\\"$L5\\\",null,{}],\\\"templateStyles\\\":\\\"$undefined\\\",\\\"templateScripts\\\":\\\"$undefined\\\",\\\"notFound\\\":[[\\\"$\\\",\\\"title\\\",null,{\\\"children\\\":\\\"404: This page could not be found.\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"style\\\":\\\"$7\\\",\\\"children\\\":[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"style\\\",null,{\\\"dangerouslySetInnerHTML\\\":{\\\"__html\\\":\\\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\\\"}}],[\\\"$\\\",\\\"h1\\\",null,{\\\"className\\\":\\\"next-error-h1\\\",\\\"style\\\":\\\"$8\\\",\\\"children\\\":\\\"404\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"style\\\":\\\"$9\\\",\\\"children\\\":[\\\"$\\\",\\\"h2\\\",null,{\\\"style\\\":\\\"$a\\\",\\\"children\\\":\\\"This page could not be found.\\\"}]}]]}]}]],\\\"notFoundStyles\\\":[]}]}],[\\\"$\\\",\\\"footer\\\",null,{\\\"className\\\":\\\"Footer_footer__UaG1g\\\",\\\"children\\\":[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"Footer_inner__ACAek\\\",\\\"children\\\":[[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"Footer_top__b4wwC\\\",\\\"children\\\":[[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"$undefined\\\",\\\"children\\\":[[\\\"$\\\",\\\"$L6\\\",null,{\\\"href\\\":\\\"/\\\",\\\"className\\\":\\\"Footer_logo__NsUJK\\\",\\\"children\\\":[\\\"Puzzle\\\",[\\\"$\\\",\\\"span\\\",null,{\\\"children\\\":\\\"Puzzle\\\"}]]}],[\\\"$\\\",\\\"p\\\",null,{\\\"className\\\":\\\"Footer_brandDesc__oUQ_R\\\",\\\"children\\\":[\\\"몰입형 방탈출 경험의 새로운 기준.\\\",[\\\"$\\\",\\\"br\\\",null,{}],\\\"당신의 한계를 시험하세요.\\\"]}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"Footer_links__oDyjI\\\",\\\"children\\\":[[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"Footer_linkGroup__3skIZ\\\",\\\"children\\\":[[\\\"$\\\",\\\"h4\\\",null,{\\\"className\\\":\\\"Footer_linkGroupTitle__dZ9OZ\\\",\\\"children\\\":\\\"테마\\\"}],[\\\"$\\\",\\\"$L6\\\",null,{\\\"href\\\":\\\"/themes/1\\\",\\\"className\\\":\\\"Footer_link__EWWOW\\\",\\\"children\\\":\\\"미스터리 맨션\\\"}],[\\\"$\\\",\\\"$L6\\\",null,{\\\"href\\\":\\\"/themes/2\\\",\\\"className\\\":\\\"Footer_link__EWWOW\\\",\\\"children\\\":\\\"우주 탈출\\\"}],[\\\"$\\\",\\\"$L6\\\",null,{\\\"href\\\":\\\"/themes/3\\\",\\\"className\\\":\\\"Footer_link__EWWOW\\\",\\\"children\\\":\\\"은행 강도\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"Footer_linkGroup__3skIZ\\\",\\\"children\\\":[[\\\"$\\\",\\\"h4\\\",null,{\\\"className\\\":\\\"Footer_linkGroupTitle__dZ9OZ\\\",\\\"children\\\":\\\"고객 지원\\\"}],[\\\"$\\\",\\\"$L6\\\",null,{\\\"href\\\":\\\"/\\\",\\\"className\\\":\\\"Footer_link__EWWOW\\\",\\\"children\\\":\\\"자주 묻는 질문\\\"}],[\\\"$\\\",\\\"$L6\\\",null,{\\\"href\\\":\\\"/\\\",\\\"className\\\":\\\"Footer_link__EWWOW\\\",\\\"children\\\":\\\"예약 안내\\\"}],[\\\"$\\\",\\\"$L6\\\",null,{\\\"href\\\":\\\"/\\\",\\\"className\\\":\\\"Footer_link__EWWOW\\\",\\\"children\\\":\\\"단체 예약\\\"}]]}]]}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"Footer_bottom__O5rKs\\\",\\\"children\\\":[\\\"$\\\",\\\"p\\\",null,{\\\"className\\\":\\\"Footer_copy__IbaoR\\\",\\\"children\\\":\\\"© 2025 PuzzlePuzzle. All rights reserved.\\\"}]}]]}]}]]}]}]],null],null],\\\"couldBeIntercepted\\\":false,\\\"initialHead\\\":[[\\\"$\\\",\\\"meta\\\",null,{\\\"name\\\":\\\"robots\\\",\\\"content\\\":\\\"noindex\\\"}],\\\"$Lb\\\"],\\\"globalErrorComponent\\\":\\\"$c\\\",\\\"missingSlots\\\":\\\"$Wd\\\"}]\\n\"])</script><script>self.__next_f.push([1,\"b:[[\\\"$\\\",\\\"meta\\\",\\\"0\\\",{\\\"name\\\":\\\"viewport\\\",\\\"content\\\":\\\"width=device-width, initial-scale=1\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"1\\\",{\\\"charSet\\\":\\\"utf-8\\\"}],[\\\"$\\\",\\\"title\\\",\\\"2\\\",{\\\"children\\\":\\\"퍼즐퍼즐 | 방탈출 카페\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"3\\\",{\\\"name\\\":\\\"description\\\",\\\"content\\\":\\\"최고의 방탈출 경험 - 퍼즐퍼즐\\\"}]]\\n3:null\\n\"])</script></body></html>";
+            return "<!DOCTYPE html><html lang=\"ko\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"stylesheet\" href=\"/_next/static/css/770887bdab183263.css\" data-precedence=\"next\"/><link rel=\"preload\" as=\"script\" fetchPriority=\"low\" href=\"/_next/static/chunks/webpack-1f54ea24b0c78c1e.js\"/><script src=\"/_next/static/chunks/1dd3208c-6ed69b2af984ef21.js\" async=\"\"></script><script src=\"/_next/static/chunks/528-905a643a8bbf1f1a.js\" async=\"\"></script><script src=\"/_next/static/chunks/main-app-3bcd6311cde5d757.js\" async=\"\"></script><script src=\"/_next/static/chunks/146-2263b0d2548c6e31.js\" async=\"\"></script><script src=\"/_next/static/chunks/app/layout-7b6ff203d81fa339.js\" async=\"\"></script><meta name=\"robots\" content=\"noindex\"/><title>404: This page could not be found.</title><title>퍼즐퍼즐 (Puzzle Puzzle) | 2026 트렌디 인터랙티브 방탈출</title><meta name=\"description\" content=\"두뇌를 자극하는 스타일리시한 공간, 3D 입체 퍼즐 &amp; 네온 감성 포토존 - 퍼즐퍼즐 홍대점\"/><script src=\"/_next/static/chunks/polyfills-42372ed130431b0a.js\" noModule=\"\"></script></head><body><canvas aria-hidden=\"true\" style=\"position:fixed;inset:0;pointer-events:none;z-index:0;opacity:0.65\"></canvas><nav class=\"GNB_nav__b_wE_\" aria-label=\"글로벌 네비게이션\"><a class=\"GNB_logo__cf6fw\" href=\"/\"><span class=\"GNB_logoText__Wh1Qd\">PUZZLE</span><span class=\"GNB_logoAccent__S_KZR\">PUZZLE</span><span class=\"GNB_logoBadge__cRj6d\">2026</span></a><div class=\"GNB_links__zZRNS\" role=\"list\"><a class=\"GNB_link__2onZk\" role=\"listitem\" href=\"/\">홈</a><a class=\"GNB_link__2onZk\" role=\"listitem\" href=\"/themes\">게임 예약</a><a class=\"GNB_link__2onZk\" role=\"listitem\" href=\"/reviews\">고객 리뷰</a><a class=\"GNB_link__2onZk\" role=\"listitem\" href=\"/notices\">공지 &amp; 이벤트</a><a class=\"GNB_link__2onZk\" role=\"listitem\" href=\"/about\">브랜드 소개</a><button class=\"GNB_cta__b1ZHJ\" role=\"listitem\" style=\"cursor:pointer;border:none\">지금 예약 🎯</button></div><button class=\"GNB_hamburger__YAeIf\" aria-label=\"메뉴 열기\" aria-expanded=\"false\" aria-controls=\"mobile-menu\"><span aria-hidden=\"true\"></span><span aria-hidden=\"true\"></span><span aria-hidden=\"true\"></span></button></nav><main style=\"position:relative;z-index:2\"><div style=\"font-family:system-ui,&quot;Segoe UI&quot;,Roboto,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;;height:100vh;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center\"><div><style>body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}</style><h1 class=\"next-error-h1\" style=\"display:inline-block;margin:0 20px 0 0;padding:0 23px 0 0;font-size:24px;font-weight:500;vertical-align:top;line-height:49px\">404</h1><div style=\"display:inline-block\"><h2 style=\"font-size:14px;font-weight:400;line-height:49px;margin:0\">This page could not be found.</h2></div></div></div></main><footer class=\"Footer_footer__UaG1g\"><div class=\"Footer_topLine__8z8DO\" aria-hidden=\"true\"></div><div class=\"Footer_inner__ACAek\"><div class=\"Footer_grid__qjDt3\"><div class=\"Footer_brandCol__HhVKt\"><a class=\"Footer_logo__NsUJK\" href=\"/\"><span class=\"Footer_logoText__UJ4c3\">PUZZLE</span><span class=\"Footer_logoAccent__O57tg\">PUZZLE</span></a><p class=\"Footer_brandDesc__oUQ_R\">몰입형 방탈출 경험의 새로운 기준.<br/>당신의 한계를 시험하세요.</p><div class=\"Footer_socialLinks__QXggH\"><a href=\"https://instagram.com\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"Footer_socialLink__VOPU_\" aria-label=\"인스타그램\">IG</a><a href=\"https://pf.kakao.com\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"Footer_socialLink__VOPU_\" aria-label=\"카카오채널\">KA</a></div></div><div class=\"Footer_linkCol__KVBOh\"><h3 class=\"Footer_colTitle__sNZTr\">게임 테마</h3><nav aria-label=\"테마 목록\"><a class=\"Footer_footerLink__twEJY\" href=\"/themes#game-1\">큐브 스페이스: 차원의 문</a><a class=\"Footer_footerLink__twEJY\" href=\"/themes#game-2\">미스테리 룸: 아티팩트의 비밀</a><a class=\"Footer_footerLink__twEJY\" href=\"/themes#game-3\">마법의 퍼즐 저택</a></nav></div><div class=\"Footer_linkCol__KVBOh\"><h3 class=\"Footer_colTitle__sNZTr\">바로가기</h3><nav aria-label=\"바로가기\"><a class=\"Footer_footerLink__twEJY\" href=\"/themes\">실시간 게임 예약</a><a class=\"Footer_footerLink__twEJY\" href=\"/reviews\">생생 고객 리뷰</a><a class=\"Footer_footerLink__twEJY\" href=\"/notices\">공지 &amp; 이벤트</a><a class=\"Footer_footerLink__twEJY\" href=\"/about\">브랜드 소개 &amp; 위치</a></nav></div><div class=\"Footer_infoCol__TbmKq\"><h3 class=\"Footer_colTitle__sNZTr\">홍대 스토어</h3><address class=\"Footer_address__Ndpfs\"><p class=\"Footer_infoItem__H5usB\"><span class=\"Footer_infoLabel__uSFbV\">위치</span>서울특별시 마포구 와우산로 21길 19 (홍대입구역 9번 출구 도보 5분)</p><p class=\"Footer_infoItem__H5usB\"><span class=\"Footer_infoLabel__uSFbV\">전화</span>02-789-1024</p><p class=\"Footer_infoItem__H5usB\"><span class=\"Footer_infoLabel__uSFbV\">운영시간</span>매일 11:00 ~ 23:00 (연중무휴)</p></address></div></div><div class=\"Footer_bottom__O5rKs\"><p class=\"Footer_copy__IbaoR\">© 2025 PuzzlePuzzle. All rights reserved.</p><div class=\"Footer_legalLinks__ABuv_\"><a class=\"Footer_legalLink__VU9ur\" href=\"/\">개인정보처리방침</a><a class=\"Footer_legalLink__VU9ur\" href=\"/\">이용약관</a></div></div></div></footer><script src=\"/_next/static/chunks/webpack-1f54ea24b0c78c1e.js\" async=\"\"></script><script>(self.__next_f=self.__next_f||[]).push([0]);self.__next_f.push([2,null])</script><script>self.__next_f.push([1,\"1:HL[\\\"/_next/static/css/770887bdab183263.css\\\",\\\"style\\\"]\\n\"])</script><script>self.__next_f.push([1,\"2:I[1815,[],\\\"\\\"]\\n4:I[5092,[],\\\"\\\"]\\n5:I[2023,[],\\\"\\\"]\\n6:I[3768,[\\\"146\\\",\\\"static/chunks/146-2263b0d2548c6e31.js\\\",\\\"185\\\",\\\"static/chunks/app/layout-7b6ff203d81fa339.js\\\"],\\\"StoreProvider\\\"]\\n7:I[9745,[\\\"146\\\",\\\"static/chunks/146-2263b0d2548c6e31.js\\\",\\\"185\\\",\\\"static/chunks/app/layout-7b6ff203d81fa339.js\\\"],\\\"default\\\"]\\n8:I[6634,[\\\"146\\\",\\\"static/chunks/146-2263b0d2548c6e31.js\\\",\\\"185\\\",\\\"static/chunks/app/layout-7b6ff203d81fa339.js\\\"],\\\"default\\\"]\\n9:I[1542,[\\\"146\\\",\\\"static/chunks/146-2263b0d2548c6e31.js\\\",\\\"185\\\",\\\"static/chunks/app/layout-7b6ff203d81fa339.js\\\"],\\\"default\\\"]\\ne:I[6340,[\\\"146\\\",\\\"static/chunks/146-2263b0d2548c6e31.js\\\",\\\"185\\\",\\\"static/chunks/app/layout-7b6ff203d81fa339.js\\\"],\\\"\\\"]\\nf:I[4462,[\\\"146\\\",\\\"static/chunks/146-2263b0d2548c6e31.js\\\",\\\"185\\\",\\\"static/chunks/app/layout-7b6ff203d81fa339.js\\\"],\\\"default\\\"]\\n11:I[1584,[],\\\"\\\"]\\na:{\\\"fontFamily\\\":\\\"system-ui,\\\\\\\"Segoe UI\\\\\\\",Roboto,Helvetica,Arial,sans-serif,\\\\\\\"Apple Color Emoji\\\\\\\",\\\\\\\"Segoe UI Emoji\\\\\\\"\\\",\\\"height\\\":\\\"100vh\\\",\\\"textAlign\\\":\\\"center\\\",\\\"display\\\":\\\"flex\\\",\\\"flexDirection\\\":\\\"column\\\",\\\"alignItems\\\":\\\"center\\\",\\\"justifyContent\\\":\\\"center\\\"}\\nb:{\\\"display\\\":\\\"inline-block\\\",\\\"margin\\\":\\\"0 20px 0 0\\\",\\\"padding\\\":\\\"0 23px 0 0\\\",\\\"fontSize\\\":24,\\\"fontWeight\\\":500,\\\"verticalAlign\\\":\\\"top\\\",\\\"lineHeight\\\":\\\"49px\\\"}\\nc:{\\\"display\\\":\\\"inline-block\\\"}\\nd:{\\\"fontSize\\\":14,\\\"fontWeight\\\":400,\\\"lineHeight\\\":\\\"49px\\\",\\\"margin\\\":0}\\n12:[]\\n\"])</script><script>self.__next_f.push([1,\"0:[\\\"$\\\",\\\"$L2\\\",null,{\\\"buildId\\\":\\\"hARumL4TE4qbeGisAeYlk\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"_not-found\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"/_not-found\\\",{\\\"children\\\":[\\\"__PAGE__\\\",{}]}]},\\\"$undefined\\\",\\\"$undefined\\\",true],\\\"initialSeedData\\\":[\\\"\\\",{\\\"children\\\":[\\\"/_not-found\\\",{\\\"children\\\":[\\\"__PAGE__\\\",{},[[\\\"$L3\\\",[[\\\"$\\\",\\\"title\\\",null,{\\\"children\\\":\\\"404: This page could not be found.\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"style\\\":{\\\"fontFamily\\\":\\\"system-ui,\\\\\\\"Segoe UI\\\\\\\",Roboto,Helvetica,Arial,sans-serif,\\\\\\\"Apple Color Emoji\\\\\\\",\\\\\\\"Segoe UI Emoji\\\\\\\"\\\",\\\"height\\\":\\\"100vh\\\",\\\"textAlign\\\":\\\"center\\\",\\\"display\\\":\\\"flex\\\",\\\"flexDirection\\\":\\\"column\\\",\\\"alignItems\\\":\\\"center\\\",\\\"justifyContent\\\":\\\"center\\\"},\\\"children\\\":[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"style\\\",null,{\\\"dangerouslySetInnerHTML\\\":{\\\"__html\\\":\\\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\\\"}}],[\\\"$\\\",\\\"h1\\\",null,{\\\"className\\\":\\\"next-error-h1\\\",\\\"style\\\":{\\\"display\\\":\\\"inline-block\\\",\\\"margin\\\":\\\"0 20px 0 0\\\",\\\"padding\\\":\\\"0 23px 0 0\\\",\\\"fontSize\\\":24,\\\"fontWeight\\\":500,\\\"verticalAlign\\\":\\\"top\\\",\\\"lineHeight\\\":\\\"49px\\\"},\\\"children\\\":\\\"404\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"style\\\":{\\\"display\\\":\\\"inline-block\\\"},\\\"children\\\":[\\\"$\\\",\\\"h2\\\",null,{\\\"style\\\":{\\\"fontSize\\\":14,\\\"fontWeight\\\":400,\\\"lineHeight\\\":\\\"49px\\\",\\\"margin\\\":0},\\\"children\\\":\\\"This page could not be found.\\\"}]}]]}]}]],null],null],null]},[null,[\\\"$\\\",\\\"$L4\\\",null,{\\\"parallelRouterKey\\\":\\\"children\\\",\\\"segmentPath\\\":[\\\"children\\\",\\\"/_not-found\\\",\\\"children\\\"],\\\"error\\\":\\\"$undefined\\\",\\\"errorStyles\\\":\\\"$undefined\\\",\\\"errorScripts\\\":\\\"$undefined\\\",\\\"template\\\":[\\\"$\\\",\\\"$L5\\\",null,{}],\\\"templateStyles\\\":\\\"$undefined\\\",\\\"templateScripts\\\":\\\"$undefined\\\",\\\"notFound\\\":\\\"$undefined\\\",\\\"notFoundStyles\\\":\\\"$undefined\\\"}]],null]},[[[[\\\"$\\\",\\\"link\\\",\\\"0\\\",{\\\"rel\\\":\\\"stylesheet\\\",\\\"href\\\":\\\"/_next/static/css/770887bdab183263.css\\\",\\\"precedence\\\":\\\"next\\\",\\\"crossOrigin\\\":\\\"$undefined\\\"}]],[\\\"$\\\",\\\"html\\\",null,{\\\"lang\\\":\\\"ko\\\",\\\"children\\\":[\\\"$\\\",\\\"body\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"$L6\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"$L7\\\",null,{}],[\\\"$\\\",\\\"$L8\\\",null,{}],[\\\"$\\\",\\\"$L9\\\",null,{}],[\\\"$\\\",\\\"main\\\",null,{\\\"style\\\":{\\\"position\\\":\\\"relative\\\",\\\"zIndex\\\":2},\\\"children\\\":[\\\"$\\\",\\\"$L4\\\",null,{\\\"parallelRouterKey\\\":\\\"children\\\",\\\"segmentPath\\\":[\\\"children\\\"],\\\"error\\\":\\\"$undefined\\\",\\\"errorStyles\\\":\\\"$undefined\\\",\\\"errorScripts\\\":\\\"$undefined\\\",\\\"template\\\":[\\\"$\\\",\\\"$L5\\\",null,{}],\\\"templateStyles\\\":\\\"$undefined\\\",\\\"templateScripts\\\":\\\"$undefined\\\",\\\"notFound\\\":[[\\\"$\\\",\\\"title\\\",null,{\\\"children\\\":\\\"404: This page could not be found.\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"style\\\":\\\"$a\\\",\\\"children\\\":[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"style\\\",null,{\\\"dangerouslySetInnerHTML\\\":{\\\"__html\\\":\\\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\\\"}}],[\\\"$\\\",\\\"h1\\\",null,{\\\"className\\\":\\\"next-error-h1\\\",\\\"style\\\":\\\"$b\\\",\\\"children\\\":\\\"404\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"style\\\":\\\"$c\\\",\\\"children\\\":[\\\"$\\\",\\\"h2\\\",null,{\\\"style\\\":\\\"$d\\\",\\\"children\\\":\\\"This page could not be found.\\\"}]}]]}]}]],\\\"notFoundStyles\\\":[]}]}],[\\\"$\\\",\\\"footer\\\",null,{\\\"className\\\":\\\"Footer_footer__UaG1g\\\",\\\"children\\\":[[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"Footer_topLine__8z8DO\\\",\\\"aria-hidden\\\":\\\"true\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"Footer_inner__ACAek\\\",\\\"children\\\":[[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"Footer_grid__qjDt3\\\",\\\"children\\\":[[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"Footer_brandCol__HhVKt\\\",\\\"children\\\":[[\\\"$\\\",\\\"$Le\\\",null,{\\\"href\\\":\\\"/\\\",\\\"className\\\":\\\"Footer_logo__NsUJK\\\",\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"className\\\":\\\"Footer_logoText__UJ4c3\\\",\\\"children\\\":\\\"PUZZLE\\\"}],[\\\"$\\\",\\\"span\\\",null,{\\\"className\\\":\\\"Footer_logoAccent__O57tg\\\",\\\"children\\\":\\\"PUZZLE\\\"}]]}],[\\\"$\\\",\\\"p\\\",null,{\\\"className\\\":\\\"Footer_brandDesc__oUQ_R\\\",\\\"children\\\":[\\\"몰입형 방탈출 경험의 새로운 기준.\\\",[\\\"$\\\",\\\"br\\\",null,{}],\\\"당신의 한계를 시험하세요.\\\"]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"Footer_socialLinks__QXggH\\\",\\\"children\\\":[[\\\"$\\\",\\\"a\\\",null,{\\\"href\\\":\\\"https://instagram.com\\\",\\\"target\\\":\\\"_blank\\\",\\\"rel\\\":\\\"noopener noreferrer\\\",\\\"className\\\":\\\"Footer_socialLink__VOPU_\\\",\\\"aria-label\\\":\\\"인스타그램\\\",\\\"children\\\":\\\"IG\\\"}],[\\\"$\\\",\\\"a\\\",null,{\\\"href\\\":\\\"https://pf.kakao.com\\\",\\\"target\\\":\\\"_blank\\\",\\\"rel\\\":\\\"noopener noreferrer\\\",\\\"className\\\":\\\"Footer_socialLink__VOPU_\\\",\\\"aria-label\\\":\\\"카카오채널\\\",\\\"children\\\":\\\"KA\\\"}]]}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"Footer_linkCol__KVBOh\\\",\\\"children\\\":[[\\\"$\\\",\\\"h3\\\",null,{\\\"className\\\":\\\"Footer_colTitle__sNZTr\\\",\\\"children\\\":\\\"게임 테마\\\"}],[\\\"$\\\",\\\"nav\\\",null,{\\\"aria-label\\\":\\\"테마 목록\\\",\\\"children\\\":[[\\\"$\\\",\\\"$Le\\\",null,{\\\"href\\\":\\\"/themes#game-1\\\",\\\"className\\\":\\\"Footer_footerLink__twEJY\\\",\\\"children\\\":\\\"큐브 스페이스: 차원의 문\\\"}],[\\\"$\\\",\\\"$Le\\\",null,{\\\"href\\\":\\\"/themes#game-2\\\",\\\"className\\\":\\\"Footer_footerLink__twEJY\\\",\\\"children\\\":\\\"미스테리 룸: 아티팩트의 비밀\\\"}],[\\\"$\\\",\\\"$Le\\\",null,{\\\"href\\\":\\\"/themes#game-3\\\",\\\"className\\\":\\\"Footer_footerLink__twEJY\\\",\\\"children\\\":\\\"마법의 퍼즐 저택\\\"}]]}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"Footer_linkCol__KVBOh\\\",\\\"children\\\":[[\\\"$\\\",\\\"h3\\\",null,{\\\"className\\\":\\\"Footer_colTitle__sNZTr\\\",\\\"children\\\":\\\"바로가기\\\"}],[\\\"$\\\",\\\"nav\\\",null,{\\\"aria-label\\\":\\\"바로가기\\\",\\\"children\\\":[[\\\"$\\\",\\\"$Le\\\",null,{\\\"href\\\":\\\"/themes\\\",\\\"className\\\":\\\"Footer_footerLink__twEJY\\\",\\\"children\\\":\\\"실시간 게임 예약\\\"}],[\\\"$\\\",\\\"$Le\\\",null,{\\\"href\\\":\\\"/reviews\\\",\\\"className\\\":\\\"Footer_footerLink__twEJY\\\",\\\"children\\\":\\\"생생 고객 리뷰\\\"}],[\\\"$\\\",\\\"$Le\\\",null,{\\\"href\\\":\\\"/notices\\\",\\\"className\\\":\\\"Footer_footerLink__twEJY\\\",\\\"children\\\":\\\"공지 \\u0026 이벤트\\\"}],[\\\"$\\\",\\\"$Le\\\",null,{\\\"href\\\":\\\"/about\\\",\\\"className\\\":\\\"Footer_footerLink__twEJY\\\",\\\"children\\\":\\\"브랜드 소개 \\u0026 위치\\\"}]]}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"Footer_infoCol__TbmKq\\\",\\\"children\\\":[[\\\"$\\\",\\\"h3\\\",null,{\\\"className\\\":\\\"Footer_colTitle__sNZTr\\\",\\\"children\\\":\\\"홍대 스토어\\\"}],[\\\"$\\\",\\\"address\\\",null,{\\\"className\\\":\\\"Footer_address__Ndpfs\\\",\\\"children\\\":[[\\\"$\\\",\\\"p\\\",null,{\\\"className\\\":\\\"Footer_infoItem__H5usB\\\",\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"className\\\":\\\"Footer_infoLabel__uSFbV\\\",\\\"children\\\":\\\"위치\\\"}],\\\"서울특별시 마포구 와우산로 21길 19 (홍대입구역 9번 출구 도보 5분)\\\"]}],[\\\"$\\\",\\\"p\\\",null,{\\\"className\\\":\\\"Footer_infoItem__H5usB\\\",\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"className\\\":\\\"Footer_infoLabel__uSFbV\\\",\\\"children\\\":\\\"전화\\\"}],\\\"02-789-1024\\\"]}],[\\\"$\\\",\\\"p\\\",null,{\\\"className\\\":\\\"Footer_infoItem__H5usB\\\",\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"className\\\":\\\"Footer_infoLabel__uSFbV\\\",\\\"children\\\":\\\"운영시간\\\"}],\\\"매일 11:00 ~ 23:00 (연중무휴)\\\"]}]]}]]}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"Footer_bottom__O5rKs\\\",\\\"children\\\":[[\\\"$\\\",\\\"p\\\",null,{\\\"className\\\":\\\"Footer_copy__IbaoR\\\",\\\"children\\\":\\\"© 2025 PuzzlePuzzle. All rights reserved.\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"Footer_legalLinks__ABuv_\\\",\\\"children\\\":[[\\\"$\\\",\\\"$Le\\\",null,{\\\"href\\\":\\\"/\\\",\\\"className\\\":\\\"Footer_legalLink__VU9ur\\\",\\\"children\\\":\\\"개인정보처리방침\\\"}],[\\\"$\\\",\\\"$Le\\\",null,{\\\"href\\\":\\\"/\\\",\\\"className\\\":\\\"Footer_legalLink__VU9ur\\\",\\\"children\\\":\\\"이용약관\\\"}]]}]]}]]}]]}],[\\\"$\\\",\\\"$Lf\\\",null,{}]]}]}]}]],null],null],\\\"couldBeIntercepted\\\":false,\\\"initialHead\\\":[[\\\"$\\\",\\\"meta\\\",null,{\\\"name\\\":\\\"robots\\\",\\\"content\\\":\\\"noindex\\\"}],\\\"$L10\\\"],\\\"globalErrorComponent\\\":\\\"$11\\\",\\\"missingSlots\\\":\\\"$W12\\\"}]\\n\"])</script><script>self.__next_f.push([1,\"10:[[\\\"$\\\",\\\"meta\\\",\\\"0\\\",{\\\"name\\\":\\\"viewport\\\",\\\"content\\\":\\\"width=device-width, initial-scale=1\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"1\\\",{\\\"charSet\\\":\\\"utf-8\\\"}],[\\\"$\\\",\\\"title\\\",\\\"2\\\",{\\\"children\\\":\\\"퍼즐퍼즐 (Puzzle Puzzle) | 2026 트렌디 인터랙티브 방탈출\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"3\\\",{\\\"name\\\":\\\"description\\\",\\\"content\\\":\\\"두뇌를 자극하는 스타일리시한 공간, 3D 입체 퍼즐 \\u0026 네온 감성 포토존 - 퍼즐퍼즐 홍대점\\\"}]]\\n3:null\\n\"])</script></body></html>";
           }
         
     
@@ -25310,6 +25368,11 @@ var require_require = __commonJS({
           }
         
 
+          if (pagePath.endsWith(".next/server/app/about/page.js")) {
+            return require("/Users/user/Library/CloudStorage/GoogleDrive-ypgwon@gmail.com/다른 컴퓨터/내 컴퓨터/First Work/PuzzlePuzzle/PuzzlePuzzl_Website/apps/web/.worker-next/.next/standalone/apps/web/.next/server/app/about/page.js");
+          }
+        
+
           if (pagePath.endsWith(".next/server/app/api/settings/route.js")) {
             return require("/Users/user/Library/CloudStorage/GoogleDrive-ypgwon@gmail.com/다른 컴퓨터/내 컴퓨터/First Work/PuzzlePuzzle/PuzzlePuzzl_Website/apps/web/.worker-next/.next/standalone/apps/web/.next/server/app/api/settings/route.js");
           }
@@ -25327,6 +25390,16 @@ var require_require = __commonJS({
 
           if (pagePath.endsWith(".next/server/app/page.js")) {
             return require("/Users/user/Library/CloudStorage/GoogleDrive-ypgwon@gmail.com/다른 컴퓨터/내 컴퓨터/First Work/PuzzlePuzzle/PuzzlePuzzl_Website/apps/web/.worker-next/.next/standalone/apps/web/.next/server/app/page.js");
+          }
+        
+
+          if (pagePath.endsWith(".next/server/app/reviews/page.js")) {
+            return require("/Users/user/Library/CloudStorage/GoogleDrive-ypgwon@gmail.com/다른 컴퓨터/내 컴퓨터/First Work/PuzzlePuzzle/PuzzlePuzzl_Website/apps/web/.worker-next/.next/standalone/apps/web/.next/server/app/reviews/page.js");
+          }
+        
+
+          if (pagePath.endsWith(".next/server/app/notices/page.js")) {
+            return require("/Users/user/Library/CloudStorage/GoogleDrive-ypgwon@gmail.com/다른 컴퓨터/내 컴퓨터/First Work/PuzzlePuzzle/PuzzlePuzzl_Website/apps/web/.worker-next/.next/standalone/apps/web/.next/server/app/notices/page.js");
           }
         
 
@@ -30879,7 +30952,7 @@ CacheHandler = (await import('./cache-handler.mjs')).OpenNextCacheHandler;
         return !!(0, _require.getMaybePagePath)(pathname, this.distDir, (_this_nextConfig_i18n = this.nextConfig.i18n) == null ? void 0 : _this_nextConfig_i18n.locales, this.enabledDirectories.app);
       }
       getBuildId() {
-      return "XTglRUG0P173ESYzVzQGV";
+      return "hARumL4TE4qbeGisAeYlk";
     
         const buildIdFile = (0, _path.join)(this.distDir, _constants.BUILD_ID_FILE);
         try {
@@ -31614,7 +31687,7 @@ globalThis[Symbol.for("__cloudflare-context__")] = new Proxy(
     set: (_, property, value) => Reflect.set(cloudflareContextALS.getStore(), property, value)
   }
 );
-var nextConfig = JSON.parse(`{"env":{},"webpack":null,"eslint":{"ignoreDuringBuilds":false},"typescript":{"ignoreBuildErrors":false,"tsconfigPath":"tsconfig.json"},"distDir":"./.next","cleanDistDir":true,"assetPrefix":"","cacheMaxMemorySize":52428800,"configOrigin":"next.config.mjs","useFileSystemPublicRoutes":true,"generateEtags":true,"pageExtensions":["tsx","ts","jsx","js"],"poweredByHeader":true,"compress":true,"analyticsId":"","images":{"deviceSizes":[640,750,828,1080,1200,1920,2048,3840],"imageSizes":[16,32,48,64,96,128,256,384],"path":"/_next/image","loader":"default","loaderFile":"","domains":[],"disableStaticImages":false,"minimumCacheTTL":60,"formats":["image/webp"],"dangerouslyAllowSVG":false,"contentSecurityPolicy":"script-src 'none'; frame-src 'none'; sandbox;","contentDispositionType":"inline","remotePatterns":[],"unoptimized":false},"devIndicators":{"buildActivity":true,"buildActivityPosition":"bottom-right"},"onDemandEntries":{"maxInactiveAge":60000,"pagesBufferLength":5},"amp":{"canonicalBase":""},"basePath":"","sassOptions":{},"trailingSlash":false,"i18n":null,"productionBrowserSourceMaps":false,"optimizeFonts":true,"excludeDefaultMomentLocales":true,"serverRuntimeConfig":{},"publicRuntimeConfig":{},"reactProductionProfiling":false,"reactStrictMode":null,"httpAgentOptions":{"keepAlive":true},"outputFileTracing":true,"staticPageGenerationTimeout":60,"swcMinify":true,"output":"standalone","modularizeImports":{"@mui/icons-material":{"transform":"@mui/icons-material/{{member}}"},"lodash":{"transform":"lodash/{{member}}"}},"experimental":{"multiZoneDraftMode":false,"prerenderEarlyExit":false,"serverMinification":true,"serverSourceMaps":false,"linkNoTouchStart":false,"caseSensitiveRoutes":false,"clientRouterFilter":true,"clientRouterFilterRedirects":false,"fetchCacheKeyPrefix":"","middlewarePrefetch":"flexible","optimisticClientCache":true,"manualClientBasePath":false,"cpus":7,"memoryBasedWorkersCount":false,"isrFlushToDisk":true,"workerThreads":false,"optimizeCss":false,"nextScriptWorkers":false,"scrollRestoration":false,"externalDir":false,"disableOptimizedLoading":false,"gzipSize":true,"craCompat":false,"esmExternals":true,"fullySpecified":false,"outputFileTracingRoot":"/Users/user/Library/CloudStorage/GoogleDrive-ypgwon@gmail.com/\u1103\u1161\u1105\u1173\u11AB \u110F\u1165\u11B7\u1111\u1172\u1110\u1165/\u1102\u1162 \u110F\u1165\u11B7\u1111\u1172\u1110\u1165/First Work/PuzzlePuzzle/PuzzlePuzzl_Website","swcTraceProfiling":false,"forceSwcTransforms":false,"largePageDataBytes":128000,"adjustFontFallbacks":false,"adjustFontFallbacksWithSizeAdjust":false,"typedRoutes":false,"instrumentationHook":false,"bundlePagesExternals":false,"parallelServerCompiles":false,"parallelServerBuildTraces":false,"ppr":false,"missingSuspenseWithCSRBailout":true,"optimizeServerReact":true,"useEarlyImport":false,"staleTimes":{"dynamic":30,"static":300},"optimizePackageImports":["lucide-react","date-fns","lodash-es","ramda","antd","react-bootstrap","ahooks","@ant-design/icons","@headlessui/react","@headlessui-float/react","@heroicons/react/20/solid","@heroicons/react/24/solid","@heroicons/react/24/outline","@visx/visx","@tremor/react","rxjs","@mui/material","@mui/icons-material","recharts","react-use","@material-ui/core","@material-ui/icons","@tabler/icons-react","mui-core","react-icons/ai","react-icons/bi","react-icons/bs","react-icons/cg","react-icons/ci","react-icons/di","react-icons/fa","react-icons/fa6","react-icons/fc","react-icons/fi","react-icons/gi","react-icons/go","react-icons/gr","react-icons/hi","react-icons/hi2","react-icons/im","react-icons/io","react-icons/io5","react-icons/lia","react-icons/lib","react-icons/lu","react-icons/md","react-icons/pi","react-icons/ri","react-icons/rx","react-icons/si","react-icons/sl","react-icons/tb","react-icons/tfi","react-icons/ti","react-icons/vsc","react-icons/wi"],"trustHostHeader":false,"isExperimentalCompile":false},"configFileName":"next.config.mjs"}`);
+var nextConfig = JSON.parse(`{"env":{},"webpack":null,"eslint":{"ignoreDuringBuilds":false},"typescript":{"ignoreBuildErrors":false,"tsconfigPath":"tsconfig.json"},"distDir":"./.next","cleanDistDir":true,"assetPrefix":"","cacheMaxMemorySize":52428800,"configOrigin":"next.config.mjs","useFileSystemPublicRoutes":true,"generateEtags":true,"pageExtensions":["tsx","ts","jsx","js"],"poweredByHeader":true,"compress":true,"analyticsId":"","images":{"deviceSizes":[640,750,828,1080,1200,1920,2048,3840],"imageSizes":[16,32,48,64,96,128,256,384],"path":"/_next/image","loader":"default","loaderFile":"","domains":[],"disableStaticImages":false,"minimumCacheTTL":60,"formats":["image/webp"],"dangerouslyAllowSVG":false,"contentSecurityPolicy":"script-src 'none'; frame-src 'none'; sandbox;","contentDispositionType":"inline","remotePatterns":[{"protocol":"https","hostname":"images.unsplash.com"}],"unoptimized":false},"devIndicators":{"buildActivity":true,"buildActivityPosition":"bottom-right"},"onDemandEntries":{"maxInactiveAge":60000,"pagesBufferLength":5},"amp":{"canonicalBase":""},"basePath":"","sassOptions":{},"trailingSlash":false,"i18n":null,"productionBrowserSourceMaps":false,"optimizeFonts":true,"excludeDefaultMomentLocales":true,"serverRuntimeConfig":{},"publicRuntimeConfig":{},"reactProductionProfiling":false,"reactStrictMode":null,"httpAgentOptions":{"keepAlive":true},"outputFileTracing":true,"staticPageGenerationTimeout":60,"swcMinify":true,"output":"standalone","modularizeImports":{"@mui/icons-material":{"transform":"@mui/icons-material/{{member}}"},"lodash":{"transform":"lodash/{{member}}"}},"experimental":{"multiZoneDraftMode":false,"prerenderEarlyExit":false,"serverMinification":true,"serverSourceMaps":false,"linkNoTouchStart":false,"caseSensitiveRoutes":false,"clientRouterFilter":true,"clientRouterFilterRedirects":false,"fetchCacheKeyPrefix":"","middlewarePrefetch":"flexible","optimisticClientCache":true,"manualClientBasePath":false,"cpus":7,"memoryBasedWorkersCount":false,"isrFlushToDisk":true,"workerThreads":false,"optimizeCss":false,"nextScriptWorkers":false,"scrollRestoration":false,"externalDir":false,"disableOptimizedLoading":false,"gzipSize":true,"craCompat":false,"esmExternals":true,"fullySpecified":false,"outputFileTracingRoot":"/Users/user/Library/CloudStorage/GoogleDrive-ypgwon@gmail.com/\u1103\u1161\u1105\u1173\u11AB \u110F\u1165\u11B7\u1111\u1172\u1110\u1165/\u1102\u1162 \u110F\u1165\u11B7\u1111\u1172\u1110\u1165/First Work/PuzzlePuzzle/PuzzlePuzzl_Website","swcTraceProfiling":false,"forceSwcTransforms":false,"largePageDataBytes":128000,"adjustFontFallbacks":false,"adjustFontFallbacksWithSizeAdjust":false,"typedRoutes":false,"instrumentationHook":false,"bundlePagesExternals":false,"parallelServerCompiles":false,"parallelServerBuildTraces":false,"ppr":false,"missingSuspenseWithCSRBailout":true,"optimizeServerReact":true,"useEarlyImport":false,"staleTimes":{"dynamic":30,"static":300},"optimizePackageImports":["lucide-react","date-fns","lodash-es","ramda","antd","react-bootstrap","ahooks","@ant-design/icons","@headlessui/react","@headlessui-float/react","@heroicons/react/20/solid","@heroicons/react/24/solid","@heroicons/react/24/outline","@visx/visx","@tremor/react","rxjs","@mui/material","@mui/icons-material","recharts","react-use","@material-ui/core","@material-ui/icons","@tabler/icons-react","mui-core","react-icons/ai","react-icons/bi","react-icons/bs","react-icons/cg","react-icons/ci","react-icons/di","react-icons/fa","react-icons/fa6","react-icons/fc","react-icons/fi","react-icons/gi","react-icons/go","react-icons/gr","react-icons/hi","react-icons/hi2","react-icons/im","react-icons/io","react-icons/io5","react-icons/lia","react-icons/lib","react-icons/lu","react-icons/md","react-icons/pi","react-icons/ri","react-icons/rx","react-icons/si","react-icons/sl","react-icons/tb","react-icons/tfi","react-icons/ti","react-icons/vsc","react-icons/wi"],"trustHostHeader":false,"isExperimentalCompile":false},"configFileName":"next.config.mjs"}`);
 var requestHandler = null;
 var worker_default = {
   async fetch(request, env, ctx) {
